@@ -1,4 +1,4 @@
-// =============================================
+ // =============================================
 // PORTFOLIO — JavaScript
 // =============================================
 
@@ -143,6 +143,67 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   revealElements.forEach((el) => revealObserver.observe(el));
+
+  // ============================
+  // SKILL SECTION CAROUSEL
+  // ============================
+  function setupSkillCarousels() {
+    if (window.innerWidth <= 1024) return;
+
+    const carousels = document.querySelectorAll('.skill-logo-grid');
+    carousels.forEach((grid) => {
+      const originalItems = Array.from(grid.children);
+      if (originalItems.length === 0) return;
+
+      const track = document.createElement('div');
+      track.className = 'skill-logo-track';
+      originalItems.forEach((item) => track.appendChild(item));
+      grid.appendChild(track);
+
+      const originalWidth = track.scrollWidth;
+      const viewportWidth = grid.clientWidth;
+      while (track.scrollWidth < viewportWidth * 2 + originalWidth) {
+        originalItems.forEach((item) => {
+          const clone = item.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          track.appendChild(clone);
+        });
+        if (track.children.length > originalItems.length * 6) break;
+      }
+
+      let offset = 0;
+      let lastTime = performance.now();
+      let isPaused = false;
+
+      grid.addEventListener('mouseenter', () => {
+        isPaused = true;
+      });
+      grid.addEventListener('mouseleave', () => {
+        isPaused = false;
+        lastTime = performance.now();
+      });
+
+      function animateCarousel(time) {
+        if (!isPaused) {
+          const delta = time - lastTime;
+          lastTime = time;
+          offset += delta * 0.03;
+          if (offset >= originalWidth) {
+            offset -= originalWidth;
+          }
+          track.style.transform = `translateX(-${offset}px)`;
+        } else {
+          lastTime = time;
+        }
+        requestAnimationFrame(animateCarousel);
+      }
+
+      track.style.willChange = 'transform';
+      requestAnimationFrame(animateCarousel);
+    });
+  }
+
+  setupSkillCarousels();
 
   // ============================
   // COUNTER ANIMATION
