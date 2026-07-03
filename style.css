@@ -577,6 +577,19 @@ img {
   display: block;
 }
 
+.skill-logo-card__icon img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  object-fit: contain;
+}
+
+.skill-logo-card__icon svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
 .skill-logo-card__label {
   font-size: 0.7rem;
   font-weight: 500;
