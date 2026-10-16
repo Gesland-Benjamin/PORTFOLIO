@@ -3,28 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Développeur Fullstack</title>
+    <title>Ben — Développeur fullstack freelance | Web &amp; mobile</title>
+    <meta name="description" content="Ben, développeur fullstack freelance en France. Conception d’applications web et mobiles : React, Node.js et PostgreSQL. Découvrez mes projets." />
+    <meta name="theme-color" content="#070b12" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Ben — Développeur fullstack freelance" />
+    <meta property="og:description" content="Des idées aux applications web et mobiles. Découvrez mes projets et mon approche du développement." />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- ===== CURSOR ===== -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursorFollower"></div>
+    <a class="skip-link" href="#main">Aller au contenu</a>
 
     <!-- ===== NAV ===== -->
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Navigation principale">
       <div class="nav__inner container">
-        <a href="#" class="nav__logo">
-          <span class="nav__logo-bracket"></span>
+        <a href="#hero" class="nav__logo" aria-label="Ben — accueil">
+          <span class="nav__logo-bracket">&lt;</span>
           <span class="nav__logo-text">Ben</span>
-          <span class="nav__logo-bracket">/></span>
+          <span class="nav__logo-bracket">&gt;</span>
         </a>
         <ul class="nav__links" id="navLinks">
           <li><a href="#hero" class="nav__link active">Accueil</a></li>
@@ -33,34 +31,48 @@
           <li><a href="#projects" class="nav__link">Projets</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
-        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks" type="button">
           <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
 
+    <main id="main" tabindex="-1">
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
-      <div class="hero__bg" id="heroBg"></div>
-      <div class="hero__particles" id="particles"></div>
+      <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__content container">
-        <p class="hero__greeting reveal">Bonjour, je suis</p>
+        <div class="hero__badge reveal">Disponible pour missions</div>
+        <p class="hero__greeting reveal">Bonjour, moi c’est Ben</p>
         <h1 class="hero__title reveal">
           <span class="hero__title-line">Développeur</span>
-          <span class="hero__title-line hero__title-line--accent"
-            >Fullstack</span
-          >
+          <span class="hero__title-line hero__title-line--accent">Fullstack</span>
         </h1>
         <p class="hero__subtitle reveal">
-          Je transforme des idées en expériences web performantes,
-          <br class="hide-mobile" />
-          de la conception à l'infrastructure.
+          Je transforme des idées en produits web et mobiles performants, modernes et utiles,
+
+          du design à l’infrastructure, avec un vrai souci de qualité.
         </p>
         <div class="hero__actions reveal">
           <a href="#projects" class="btn btn--primary">Voir mes projets</a>
           <a href="#contact" class="btn btn--ghost">Me contacter</a>
         </div>
+        <div class="hero__meta reveal">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>UI/UX</span>
+        </div>
       </div>
+      <aside class="hero__studio" aria-label="Mon approche">
+        <span class="studio__eyebrow">De l’idée au produit</span>
+        <p class="studio__title">Pensé pour les gens.<br /><span>Construit pour durer.</span></p>
+        <ol class="studio__steps">
+          <li><span>01</span><div><strong>Concevoir</strong><p>Clarifier le besoin, dessiner l’expérience.</p></div></li>
+          <li><span>02</span><div><strong>Développer</strong><p>Relier l’interface à une base solide.</p></div></li>
+          <li><span>03</span><div><strong>Accompagner</strong><p>Tester, livrer et faire évoluer.</p></div></li>
+        </ol>
+        <a href="#projects" class="studio__link">Explorer les projets <span aria-hidden="true">↗</span></a>
+      </aside>
     </section>
 
     <!-- ===== ABOUT ===== -->
@@ -90,7 +102,7 @@
               En parallèle du développement, j’utilise des outils comme Figma, Canva, Whimsical
               et certaines IA pour imaginer des interfaces propres, cohérentes
               et efficaces. Je travaille de manière méthodique, en m’appuyant
-              sur des outils comme Trello , GitHub pour garder une organisation claire et
+              sur des outils comme Trello et GitHub pour garder une organisation claire et
               respecter les délais.
             </p>
             <p>
@@ -100,15 +112,15 @@
           </div>
           <div class="about__stats reveal">
             <div class="stat-card">
-              <span class="stat-card__number" data-count="2">0</span>
+              <span class="stat-card__number" data-count="2">2+</span>
               <span class="stat-card__label">Années d'expérience</span>
             </div>
             <div class="stat-card">
-              <span class="stat-card__number" data-count="30">0</span>
+              <span class="stat-card__number" data-count="30">30+</span>
               <span class="stat-card__label">Projets livrés</span>
             </div>
             <div class="stat-card">
-              <span class="stat-card__number" data-count="15">0</span>
+              <span class="stat-card__number" data-count="15">15+</span>
               <span class="stat-card__label">Clients satisfaits</span>
             </div>
           </div>
@@ -135,49 +147,49 @@
             <div class="skill-logo-grid">
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/javascript.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">JavaScript</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/react.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">React</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/svelte/FF3E00" alt="Svelte logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/svelte.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Svelte</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/tailwindcss.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Tailwind</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/html5.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">HTML5</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="images/css3.svg" alt="CSS3 logo" />
+                  <img loading="lazy" decoding="async" src="images/css3.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">CSS3</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/typescript.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">TypeScript</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/nextdotjs/F59E0B" alt="Next.js logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/nextdotjs.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Next.js</span>
               </div>
@@ -189,37 +201,37 @@
             <div class="skill-logo-grid">
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/nodedotjs.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Node.js</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/express/00A8E1" alt="Express logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/express.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Express</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/sequelize/52B0E7" alt="Sequelize logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/sequelize.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Sequelize</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/postgresql.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">PostgreSQL</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/mysql.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">MySQL</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/jsonwebtokens/FFB020" alt="JWT logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/jsonwebtokens.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">JWT</span>
               </div>
@@ -231,37 +243,37 @@
             <div class="skill-logo-grid">
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/docker.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Docker</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/github/6E5494" alt="GitHub logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/github.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">GitHub</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/expo/1C2024" alt="Expo Go logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/expo.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Expo Go</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/circleci/06B6D4" alt="CircleCI logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/circleci.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">CI/CD</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/git/F05032" alt="Git logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/git.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Git</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/trello.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Trello</span>
               </div>
@@ -273,23 +285,23 @@
             <div class="skill-logo-grid">
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma logo" />
+                  <img loading="lazy" decoding="async" src="images/icons/figma.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Figma</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="images/css3.svg" alt="CSS3 logo" />
+                  <img loading="lazy" decoding="async" src="images/css3.svg" alt="" width="32" height="32" />
                 </div>
                 <span class="skill-logo-card__label">Responsive</span>
               </div>
               <div class="skill-logo-card">
                 <div class="skill-logo-card__icon">
-                  <img src="https://cdn.simpleicons.org/canvas/00C4CC" alt="Canva logo" />
+                  <span class="skill-initial" aria-hidden="true">CA</span>
                 </div>
                 <span class="skill-logo-card__label">Canva</span>
               </div>
-              
+
             </div>
           </div>
           </div>
@@ -306,8 +318,8 @@
           <article class="project-card reveal">
             <div class="project-card__img">
               <div class="project-card__placeholder" style="--hue: 200">
-                <img
-                  src="/images/SCREENSHOT_FLOWNOVA.png"
+                <img loading="lazy" decoding="async"
+                  src="images/SCREENSHOT_FLOWNOVA.webp"
                   alt="Application mobile FlowNova"
                 />
               </div>
@@ -315,24 +327,23 @@
             <div class="project-card__body">
               <div class="project-card__tags">
                 <span>React Native</span><span>Node.js</span
-                ><span>PostgreSQL</span><span>TestFlight/ExpoGo</span>
+                ><span>PostgreSQL</span><span>TestFlight / Expo Go</span>
               </div>
               <h3 class="project-card__title">FlowNova</h3>
               <p class="project-card__desc">
-                Flownova est une application mobile pensée pour aider les professionnels
+                FlowNova est une application mobile pensée pour aider les professionnels
                 à mieux gérer leurs contacts, leurs suivis et leurs activités au
                 quotidien, avec une expérience simple, organisée et efficace.
               </p>
               <div class="project-card__links">
-                <a href="#" class="project-link">Live <span>→</span></a>
-                <a href="#" class="project-link">Code <span>→</span></a>
+                <a href="#contact" class="project-link">Parlons de ce projet <span aria-hidden="true">→</span></a>
               </div>
             </div>
           </article>
           <article class="project-card reveal">
             <div class="project-card__img">
               <div class="project-card__placeholder" style="--hue: 280">
-                <img src="/images/SCREENSHOT_BLOG.png" alt="Blog" />
+                <img loading="lazy" decoding="async" src="images/SCREENSHOT_BLOG.webp" alt="Blog" />
               </div>
             </div>
             <div class="project-card__body">
@@ -354,7 +365,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live <span>→</span>
+                  Voir le site <span aria-hidden="true">↗</span>
                 </a>
                 <a
                   href="https://github.com/Gesland-Benjamin/BLOG"
@@ -362,7 +373,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Code <span>→</span>
+                  Voir le code <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </div>
@@ -370,8 +381,8 @@
           <article class="project-card reveal">
             <div class="project-card__img">
               <div class="project-card__placeholder" style="--hue: 340">
-                <img
-                  src="/images/SCREENSHOT_GAMERCHALLENGE.png"
+                <img loading="lazy" decoding="async"
+                  src="images/SCREENSHOT_GAMERCHALLENGE.webp"
                   alt="GamerChallenge"
                 />
               </div>
@@ -388,7 +399,7 @@
               </div>
               <h3 class="project-card__title">GamerChallenge</h3>
               <p class="project-card__desc">
-                GameChallenge est une plateforme dédiée aux défis gaming où les
+                GamerChallenge est une plateforme dédiée aux défis gaming où les
                 utilisateurs peuvent découvrir, proposer et suivre des
                 challenges autour du jeu vidéo. Le site intègre également un
                 système de vote permettant de valoriser les meilleures
@@ -396,8 +407,7 @@
                 appréciés par la communauté.
               </p>
               <div class="project-card__links">
-                <a href="#" class="project-link">Live <span>→</span></a>
-                <a href="#" class="project-link">Code <span>→</span></a>
+                <a href="#contact" class="project-link">Parlons de ce projet <span aria-hidden="true">→</span></a>
               </div>
             </div>
           </article>
@@ -422,15 +432,15 @@
             <div class="contact__details">
               <div class="contact__item">
                 <span class="contact__icon">✉️</span>
-                <a href="mailto:ben@example.com">ben@example.com</a>
+                <a href="mailto:bengesland.dev@gmail.com">bengesland.dev@gmail.com</a>
               </div>
               <div class="contact__item">
                 <span class="contact__icon">📍</span>
-                <span>Paris, France</span>
+                <span>France • Remote / Freelance</span>
               </div>
             </div>
             <div class="contact__socials">
-              <a href="#" class="social-link" aria-label="GitHub">
+              <a href="https://github.com/Gesland-Benjamin" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                 <svg
                   width="24"
                   height="24"
@@ -447,101 +457,34 @@
                   <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
               </a>
-              <a href="#" class="social-link" aria-label="LinkedIn">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                  />
-                  <rect width="4" height="12" x="2" y="9" />
-                  <circle cx="4" cy="4" r="2" />
-                </svg>
-              </a>
-              <a href="#" class="social-link" aria-label="Twitter">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
-                  />
-                </svg>
-              </a>
             </div>
           </div>
-          <form class="contact__form reveal" id="contactForm">
-            <div class="form-group">
-              <label for="name" class="form-label">Nom</label>
-              <input
-                type="text"
-                id="name"
-                class="form-input"
-                placeholder="Jean Dupont"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                id="email"
-                class="form-input"
-                placeholder="jean@example.com"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                id="message"
-                class="form-input form-textarea"
-                rows="5"
-                placeholder="Parle-moi de ton projet..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary form__btn">
-              Envoyer
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="22" y1="2" x2="11" y2="13" />
-                <polygon points="22 2 15 22 11 13 2 9 22 2" />
-              </svg>
-            </button>
-          </form>
+          <div class="contact__brief reveal">
+            <span class="section__tag">Un projet en tête ?</span>
+            <h3>Donnons-lui une forme concrète.</h3>
+            <p>Une application, un site ou un outil métier : le point de départ, c’est ton besoin.</p>
+            <ul>
+              <li>Le problème que tu souhaites résoudre</li>
+              <li>Les fonctionnalités essentielles</li>
+              <li>Ton calendrier et ton budget envisagé</li>
+            </ul>
+            <a class="btn btn--primary" href="mailto:bengesland.dev@gmail.com?subject=Parlons%20de%20mon%20projet">Parlons de ton projet</a>
+            <p class="contact__note">Ce lien ouvre ton application de messagerie. Tu peux aussi copier mon adresse e-mail.</p>
+          </div>
         </div>
       </div>
     </section>
-    
+
+
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <p class="footer__copy">&copy; 2026 Ben — Développeur Fullstack</p>
-        
+          <p class="footer__copy">&copy; <span id="year">2026</span> Ben — Développeur fullstack freelance</p>
+          <a class="footer__top" href="#hero">Retour en haut ↑</a>
+
         </div>
       </div>
     </footer>
