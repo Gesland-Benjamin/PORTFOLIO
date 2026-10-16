@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ben — Développeur fullstack freelance | Web &amp; mobile</title>
-    <meta name="description" content="Ben, développeur fullstack freelance en France. Conception d’applications web et mobiles : React, Node.js et PostgreSQL. Découvrez mes projets." />
-    <meta name="theme-color" content="#070b12" />
+    <title>Gesland Benjamin — Développeur fullstack freelance | Web &amp; mobile</title>
+    <meta name="description" content="Gesland Benjamin, développeur fullstack freelance en France. Conception d’applications web et mobiles : React, Node.js et PostgreSQL. Découvrez mes projets." />
+    <meta name="theme-color" content="#120f0d" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:title" content="Ben — Développeur fullstack freelance" />
+    <meta property="og:title" content="Gesland Benjamin — Développeur fullstack freelance" />
     <meta property="og:description" content="Des idées aux applications web et mobiles. Découvrez mes projets et mon approche du développement." />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
@@ -40,13 +40,13 @@
     <main id="main" tabindex="-1">
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="hero__content container">
+      <div class="hero__inner container">
+      <div class="hero__content">
         <div class="hero__badge reveal">Disponible pour missions</div>
         <p class="hero__greeting reveal">Bonjour, moi c’est Ben</p>
         <h1 class="hero__title reveal">
           <span class="hero__title-line">Développeur</span>
-          <span class="hero__title-line hero__title-line--accent">Fullstack</span>
+          <span class="hero__title-line hero__title-line--accent">Fullstack.</span>
         </h1>
         <p class="hero__subtitle reveal">
           Je transforme des idées en produits web et mobiles performants, modernes et utiles,
@@ -54,7 +54,7 @@
           du design à l’infrastructure, avec un vrai souci de qualité.
         </p>
         <div class="hero__actions reveal">
-          <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+          <a href="#projects" class="btn btn--primary">Voir mes projets <span aria-hidden="true">↗</span></a>
           <a href="#contact" class="btn btn--ghost">Me contacter</a>
         </div>
         <div class="hero__meta reveal">
@@ -63,24 +63,23 @@
           <span>UI/UX</span>
         </div>
       </div>
-      <aside class="hero__studio" aria-label="Mon approche">
-        <span class="studio__eyebrow">De l’idée au produit</span>
-        <p class="studio__title">Pensé pour les gens.<br /><span>Construit pour durer.</span></p>
-        <ol class="studio__steps">
-          <li><span>01</span><div><strong>Concevoir</strong><p>Clarifier le besoin, dessiner l’expérience.</p></div></li>
-          <li><span>02</span><div><strong>Développer</strong><p>Relier l’interface à une base solide.</p></div></li>
-          <li><span>03</span><div><strong>Accompagner</strong><p>Tester, livrer et faire évoluer.</p></div></li>
-        </ol>
-        <a href="#projects" class="studio__link">Explorer les projets <span aria-hidden="true">↗</span></a>
-      </aside>
+      <a class="hero__featured" href="#project-flownova" aria-label="Découvrir le projet FlowNova">
+        <div class="featured__heading"><span>Projet à découvrir</span><span aria-hidden="true">↗</span></div>
+        <div class="featured__image">
+          <img src="images/SCREENSHOT_FLOWNOVA.webp" width="1000" height="500" alt="Présentation de l’application mobile FlowNova" fetchpriority="high" decoding="async" />
+        </div>
+        <div class="featured__caption"><div><span class="featured__type">Design &amp; développement mobile</span><strong>FlowNova</strong></div><span class="featured__arrow" aria-hidden="true">↗</span></div>
+      </a>
+      </div>
+      <div class="hero__footer container"><span>Basé en France · Disponible à distance</span><a href="#projects">Découvrir les projets <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <!-- ===== ABOUT ===== -->
     <section class="about section" id="about">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__tag">À propos</span>
-          <h2 class="section__title">Qui suis-je&nbsp;?</h2>
+          <span class="section__tag">01 / À propos</span>
+          <h2 class="section__title">Un développeur.<br />Une vision d’ensemble.</h2>
         </div>
         <div class="about__grid">
           <div class="about__text reveal">
@@ -92,7 +91,7 @@
               accessible.
             </p>
             <p>
-              Depuis deux ans, je développe en JavaScript avec Node.js, Express,
+              Je développe en JavaScript avec Node.js, Express,
               React, Sequelize et des bases de données relationnelles.
               J’interviens aussi bien sur le front-end que sur le back-end, avec
               une attention particulière portée à la structure du projet, à la
@@ -110,20 +109,7 @@
               construites et adaptées au budget de mes clients.
             </p>
           </div>
-          <div class="about__stats reveal">
-            <div class="stat-card">
-              <span class="stat-card__number" data-count="2">2+</span>
-              <span class="stat-card__label">Années d'expérience</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-card__number" data-count="30">30+</span>
-              <span class="stat-card__label">Projets livrés</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-card__number" data-count="15">15+</span>
-              <span class="stat-card__label">Clients satisfaits</span>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -132,7 +118,7 @@
     <section class="skills section" id="skills">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__tag">Compétences</span>
+          <span class="section__tag">02 / Compétences</span>
           <h2 class="section__title">Stack technique</h2>
           <p class="skills__intro">
             Technologies et outils que j’utilise au quotidien pour construire des
@@ -141,185 +127,191 @@
           </p>
         </div>
         <div class="skills__grid">
-          <!-- Frontend -->
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">Frontend</h3>
-            <div class="skill-logo-grid">
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/javascript.svg" alt="" width="32" height="32" />
+          <div class="skill-group" role="group" aria-labelledby="skill-title-0">
+            <div class="skill-group__heading">
+              <h3 class="skill-group__title" id="skill-title-0">Frontend</h3>
+              <span class="skill-group__count">8 outils</span>
+            </div>
+            <div class="skill-logo-grid" id="skill-track-0" role="list" aria-labelledby="skill-title-0">
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/javascript.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">JavaScript</span>
                 </div>
-                <span class="skill-logo-card__label">JavaScript</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/react.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/react.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">React</span>
                 </div>
-                <span class="skill-logo-card__label">React</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/svelte.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/svelte.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Svelte</span>
                 </div>
-                <span class="skill-logo-card__label">Svelte</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/tailwindcss.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/tailwindcss.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Tailwind</span>
                 </div>
-                <span class="skill-logo-card__label">Tailwind</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/html5.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/html5.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">HTML5</span>
                 </div>
-                <span class="skill-logo-card__label">HTML5</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/css3.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/../css3.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">CSS3</span>
                 </div>
-                <span class="skill-logo-card__label">CSS3</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/typescript.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/typescript.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">TypeScript</span>
                 </div>
-                <span class="skill-logo-card__label">TypeScript</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/nextdotjs.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/nextdotjs.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Next.js</span>
                 </div>
-                <span class="skill-logo-card__label">Next.js</span>
-              </div>
             </div>
           </div>
-          <!-- Backend -->
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">Backend</h3>
-            <div class="skill-logo-grid">
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/nodedotjs.svg" alt="" width="32" height="32" />
+          <div class="skill-group" role="group" aria-labelledby="skill-title-1">
+            <div class="skill-group__heading">
+              <h3 class="skill-group__title" id="skill-title-1">Backend</h3>
+              <span class="skill-group__count">6 outils</span>
+            </div>
+            <div class="skill-logo-grid" id="skill-track-1" role="list" aria-labelledby="skill-title-1">
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/nodedotjs.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Node.js</span>
                 </div>
-                <span class="skill-logo-card__label">Node.js</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/express.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/express.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Express</span>
                 </div>
-                <span class="skill-logo-card__label">Express</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/sequelize.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/sequelize.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Sequelize</span>
                 </div>
-                <span class="skill-logo-card__label">Sequelize</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/postgresql.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/postgresql.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">PostgreSQL</span>
                 </div>
-                <span class="skill-logo-card__label">PostgreSQL</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/mysql.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/mysql.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">MySQL</span>
                 </div>
-                <span class="skill-logo-card__label">MySQL</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/jsonwebtokens.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/jsonwebtokens.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">JWT</span>
                 </div>
-                <span class="skill-logo-card__label">JWT</span>
-              </div>
             </div>
           </div>
-                    <!-- DevOps & Outils -->
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">DevOps & Outils</h3>
-            <div class="skill-logo-grid">
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/docker.svg" alt="" width="32" height="32" />
+          <div class="skill-group" role="group" aria-labelledby="skill-title-2">
+            <div class="skill-group__heading">
+              <h3 class="skill-group__title" id="skill-title-2">Mobile</h3>
+              <span class="skill-group__count">4 outils</span>
+            </div>
+            <div class="skill-logo-grid" id="skill-track-2" role="list" aria-labelledby="skill-title-2">
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/react.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">React Native</span>
                 </div>
-                <span class="skill-logo-card__label">Docker</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/github.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><span class="skill-initial" aria-hidden="true">TF</span></div>
+                  <span class="skill-logo-card__label">TestFlight</span>
                 </div>
-                <span class="skill-logo-card__label">GitHub</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/expo.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/flutter.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Flutter</span>
                 </div>
-                <span class="skill-logo-card__label">Expo Go</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/circleci.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/expo.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Expo Go</span>
                 </div>
-                <span class="skill-logo-card__label">CI/CD</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/git.svg" alt="" width="32" height="32" />
-                </div>
-                <span class="skill-logo-card__label">Git</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/trello.svg" alt="" width="32" height="32" />
-                </div>
-                <span class="skill-logo-card__label">Trello</span>
-              </div>
             </div>
           </div>
-          <!-- Design -->
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">Design</h3>
-            <div class="skill-logo-grid">
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/icons/figma.svg" alt="" width="32" height="32" />
+          <div class="skill-group" role="group" aria-labelledby="skill-title-3">
+            <div class="skill-group__heading">
+              <h3 class="skill-group__title" id="skill-title-3">DevOps &amp; outils</h3>
+              <span class="skill-group__count">5 outils</span>
+            </div>
+            <div class="skill-logo-grid" id="skill-track-3" role="list" aria-labelledby="skill-title-3">
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/docker.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Docker</span>
                 </div>
-                <span class="skill-logo-card__label">Figma</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <img loading="lazy" decoding="async" src="images/css3.svg" alt="" width="32" height="32" />
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/github.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">GitHub</span>
                 </div>
-                <span class="skill-logo-card__label">Responsive</span>
-              </div>
-              <div class="skill-logo-card">
-                <div class="skill-logo-card__icon">
-                  <span class="skill-initial" aria-hidden="true">CA</span>
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/circleci.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">CI/CD</span>
                 </div>
-                <span class="skill-logo-card__label">Canva</span>
-              </div>
-
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/git.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Git</span>
+                </div>
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/trello.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Trello</span>
+                </div>
             </div>
           </div>
+          <div class="skill-group" role="group" aria-labelledby="skill-title-4">
+            <div class="skill-group__heading">
+              <h3 class="skill-group__title" id="skill-title-4">Design</h3>
+              <span class="skill-group__count">4 outils</span>
+            </div>
+            <div class="skill-logo-grid" id="skill-track-4" role="list" aria-labelledby="skill-title-4">
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/figma.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Figma</span>
+                </div>
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/../css3.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Responsive</span>
+                </div>
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><span class="skill-initial" aria-hidden="true">Ca</span></div>
+                  <span class="skill-logo-card__label">Canva</span>
+                </div>
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><span class="skill-initial" aria-hidden="true">Ps</span></div>
+                  <span class="skill-logo-card__label">Adobe Photoshop</span>
+                </div>
+            </div>
+          </div>
+          <div class="skill-group" role="group" aria-labelledby="skill-title-5">
+            <div class="skill-group__heading">
+              <h3 class="skill-group__title" id="skill-title-5">IA &amp; référencement</h3>
+              <span class="skill-group__count">3 outils</span>
+            </div>
+            <div class="skill-logo-grid" id="skill-track-5" role="list" aria-labelledby="skill-title-5">
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><span class="skill-initial" aria-hidden="true">Cx</span></div>
+                  <span class="skill-logo-card__label">Codex</span>
+                </div>
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/claude.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">Claude</span>
+                </div>
+                <div class="skill-logo-card" role="listitem">
+                  <div class="skill-logo-card__icon"><img loading="lazy" decoding="async" src="images/icons/google.svg" alt="" width="32" height="32" /></div>
+                  <span class="skill-logo-card__label">SEO Google</span>
+                </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 <!-- ===== PROJECTS ===== -->
   <section class="projects section" id="projects">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__tag">Portfolio</span>
+          <span class="section__tag">03 / Portfolio</span>
           <h2 class="section__title">Projets récents</h2>
         </div>
         <div class="projects__grid">
-          <article class="project-card reveal">
+          <article class="project-card reveal" id="project-flownova">
             <div class="project-card__img">
-              <div class="project-card__placeholder" style="--hue: 200">
+              <div class="project-card__placeholder">
                 <img loading="lazy" decoding="async"
-                  src="images/SCREENSHOT_FLOWNOVA.webp"
+                  src="images/SCREENSHOT_FLOWNOVA.webp" width="1000" height="500"
                   alt="Application mobile FlowNova"
                 />
               </div>
@@ -337,13 +329,21 @@
               </p>
               <div class="project-card__links">
                 <a href="#contact" class="project-link">Parlons de ce projet <span aria-hidden="true">→</span></a>
+                <a
+                  href="https://apps.apple.com/fr/app/flownova/id6796478817"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir l'appli <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </div>
           </article>
-          <article class="project-card reveal">
+          <article class="project-card reveal" id="project-emi">
             <div class="project-card__img">
-              <div class="project-card__placeholder" style="--hue: 280">
-                <img loading="lazy" decoding="async" src="images/SCREENSHOT_BLOG.webp" alt="Blog" />
+              <div class="project-card__placeholder">
+                <img loading="lazy" decoding="async" src="images/SCREENSHOT_BLOG.webp" width="1000" height="484" alt="Page d’accueil du blog Emi-Pulse" />
               </div>
             </div>
             <div class="project-card__body">
@@ -378,11 +378,11 @@
               </div>
             </div>
           </article>
-          <article class="project-card reveal">
+          <article class="project-card reveal" id="project-gamer">
             <div class="project-card__img">
-              <div class="project-card__placeholder" style="--hue: 340">
+              <div class="project-card__placeholder">
                 <img loading="lazy" decoding="async"
-                  src="images/SCREENSHOT_GAMERCHALLENGE.webp"
+                  src="images/SCREENSHOT_GAMERCHALLENGE.webp" width="1000" height="602"
                   alt="GamerChallenge"
                 />
               </div>
@@ -419,7 +419,7 @@
     <section class="contact section" id="contact">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__tag">Contact</span>
+          <span class="section__tag">04 / Contact</span>
           <h2 class="section__title">Travaillons ensemble</h2>
         </div>
         <div class="contact__grid">
@@ -431,12 +431,16 @@
             </p>
             <div class="contact__details">
               <div class="contact__item">
-                <span class="contact__icon">✉️</span>
+                <span class="contact__icon" aria-hidden="true">↗</span>
                 <a href="mailto:bengesland.dev@gmail.com">bengesland.dev@gmail.com</a>
               </div>
               <div class="contact__item">
-                <span class="contact__icon">📍</span>
-                <span>France • Remote / Freelance</span>
+                <span class="contact__icon" aria-hidden="true">↗</span>
+                <a href="tel:+33771550165">07 71 55 01 65</a>
+              </div>
+              <div class="contact__item">
+                <span class="contact__icon contact__icon--location" aria-hidden="true"></span>
+                <span>Pont-Audemer, France · Freelance à distance</span>
               </div>
             </div>
             <div class="contact__socials">
@@ -460,7 +464,7 @@
             </div>
           </div>
           <div class="contact__brief reveal">
-            <span class="section__tag">Un projet en tête ?</span>
+            <span class="contact__eyebrow">Pour commencer</span>
             <h3>Donnons-lui une forme concrète.</h3>
             <p>Une application, un site ou un outil métier : le point de départ, c’est ton besoin.</p>
             <ul>
@@ -469,7 +473,7 @@
               <li>Ton calendrier et ton budget envisagé</li>
             </ul>
             <a class="btn btn--primary" href="mailto:bengesland.dev@gmail.com?subject=Parlons%20de%20mon%20projet">Parlons de ton projet</a>
-            <p class="contact__note">Ce lien ouvre ton application de messagerie. Tu peux aussi copier mon adresse e-mail.</p>
+            <p class="contact__note">Écris-moi directement par e-mail.</p>
           </div>
         </div>
       </div>
@@ -482,7 +486,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <p class="footer__copy">&copy; <span id="year">2026</span> Ben — Développeur fullstack freelance</p>
+          <p class="footer__copy">&copy; <span id="year">2026</span> Gesland Benjamin EI — Développeur fullstack freelance</p>
+          <a class="footer__top" href="mentions-legales.html">Mentions légales</a>
           <a class="footer__top" href="#hero">Retour en haut ↑</a>
 
         </div>

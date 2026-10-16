@@ -58,4 +58,88 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
   updateNavigation();
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Continuous ribbons use native scrolling so touch and keyboard still work.
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('.skill-group').forEach(group => {
+    const track = group.querySelector('.skill-logo-grid');
+    const originals = [...track.children];
+    let cycle = 0;
+    let visible = false;
+    let hovered = false;
+    let touched = false;
+    let frame = 0;
+    let lastTime = 0;
+    let position = 0;
+
+    function tick(time) {
+      const elapsed = lastTime ? Math.min(time - lastTime, 50) : 0;
+      lastTime = time;
+      position = (position + elapsed * 0.026) % cycle;
+      track.scrollLeft = position;
+      frame = requestAnimationFrame(tick);
+    }
+
+    function sync() {
+      cancelAnimationFrame(frame);
+      lastTime = 0;
+      position = cycle ? track.scrollLeft % cycle : 0;
+      if (cycle && visible && !hovered && !touched &&
+          !track.matches(':focus-within') && !document.hidden && !reducedMotion.matches) {
+        frame = requestAnimationFrame(tick);
+      }
+    }
+
+    function layout() {
+      track.querySelectorAll('[data-clone]').forEach(clone => clone.remove());
+      track.scrollLeft = 0;
+      cycle = 0;
+      if (!reducedMotion.matches) {
+        track.tabIndex = 0;
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        cycle = originals.reduce((width, card) => width + card.getBoundingClientRect().width + gap, 0);
+        if (cycle > 0) {
+          const copies = Math.ceil(track.clientWidth / cycle) + 1;
+          for (let i = 0; i < copies; i++) {
+            originals.forEach(card => {
+              const clone = card.cloneNode(true);
+              clone.dataset.clone = '';
+              clone.setAttribute('aria-hidden', 'true');
+              track.appendChild(clone);
+            });
+          }
+        }
+      } else {
+        track.removeAttribute('tabindex');
+      }
+      sync();
+    }
+
+    group.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'mouse') { hovered = true; sync(); }
+    });
+    group.addEventListener('pointerleave', () => { hovered = false; sync(); });
+    track.addEventListener('focusin', sync);
+    track.addEventListener('focusout', () => requestAnimationFrame(sync));
+    track.addEventListener('pointerdown', () => { touched = true; sync(); });
+    document.addEventListener('pointerdown', event => {
+      if (!group.contains(event.target)) { touched = false; sync(); }
+    });
+    track.addEventListener('keydown', event => {
+      if (['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) {
+        event.preventDefault();
+        const next = event.key === 'Home' ? 0 : event.key === 'End' ? cycle :
+          track.scrollLeft + (event.key === 'ArrowRight' ? 140 : -140);
+        track.scrollTo({ left: Math.max(0, next), behavior: 'instant' });
+      }
+    });
+    document.addEventListener('visibilitychange', sync);
+    reducedMotion.addEventListener('change', layout);
+    new IntersectionObserver(entries => {
+      visible = entries[0].isIntersecting;
+      sync();
+    }, { threshold: 0.1 }).observe(group);
+    new ResizeObserver(layout).observe(track);
+    layout();
+  });
 });

@@ -57,3 +57,13 @@ Les modifications initialement présentes dans `index.html` et `style.css` ont s
 ## Guide de complétion
 
 Voir [INFORMATIONS-A-COMPLETER.md](INFORMATIONS-A-COMPLETER.md) pour les emplacements précis et les exemples à adapter lorsque les informations seront disponibles.
+
+## Mise à jour demandée après l’audit
+
+Les trois statistiques et la durée d’expérience ont été supprimées. La stack comporte maintenant six catégories avec les sept ajouts demandés. Les carrousels ont été réintroduits à la demande du propriétaire, avec commandes manuelles, pause, arrêt hors écran et respect du mouvement réduit. Ces changements remplacent les constats précédents concernant les chiffres et la grille statique.
+
+La checklist du compte Google est disponible dans [GOOGLE-PLAY-ORGANISATION.md](GOOGLE-PLAY-ORGANISATION.md).
+
+## Mise à jour des informations légales
+
+Identité, statut EI/micro-entreprise, adresse professionnelle, SIREN/SIRET et coordonnées publiques intégrés. Une page `mentions-legales.html` est reliée au pied de page. Les constats initiaux sur leur absence sont remplacés par cet état ; voir `INFORMATIONS-A-COMPLETER.md` pour les derniers points, notamment les coordonnées contractuelles de l’hébergeur. L’adresse e-mail réservée à Google n’a pas été enregistrée dans le projet.

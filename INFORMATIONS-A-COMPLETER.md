@@ -1,124 +1,45 @@
-# Informations à compléter sur le portfolio
+# Informations du portfolio — état après ajout des coordonnées
 
-Ce guide explique où ajouter tes informations lorsque tu les auras. Les emplacements sont repérables par leur texte ou leur identifiant dans `index.html` : ils restent utiles même si les numéros de ligne changent.
+## Intégré dans le site
 
-Les exemples entre crochets sont à remplacer avant publication. Ce fichier est un guide de travail, pas une page de mentions légales à publier telle quelle. Ne renseigne ici aucune pièce d’identité, mot de passe ou information bancaire.
+- Nom légal et public : **Gesland Benjamin**.
+- Statut communiqué : entrepreneur individuel (EI), régime micro-entreprise.
+- Adresse professionnelle : dans `mentions-legales.html` uniquement.
+- SIRET communiqué : **845 277 417 00026** ; SIREN extrait : **845 277 417**. Le numéro à 14 chiffres était présenté comme un SIREN ; il a été correctement étiqueté SIRET. Identifiants repris des informations du propriétaire, sans consultation du registre pour confirmer l’établissement.
+- E-mail public et téléphone : liens `mailto:` et `tel:` dans Contact et dans les mentions légales.
+- Nom de l’éditeur : À propos, titre de page et pied de page.
+- Mentions légales accessibles depuis le pied de page, avec retour au portfolio.
+- Hostinger : marque fournie par le propriétaire, adresse et e-mail publiés dans ses conditions de service.
 
-## 1. Adresse e-mail — déjà intégrée
+L’e-mail privé de contact Google n’est enregistré dans aucun fichier du projet. Le D-U-N-S en attente n’est pas affiché sur le site.
 
-**Adresse : `bengesland.dev@gmail.com`.**
+## À confirmer pour terminer les mentions légales
 
-Dans `index.html`, section `<section class="contact section" id="contact">` :
+1. **Hostinger : entité contractuelle et téléphone.** Comparer l’entité de la facture/du contrat avec HOSTINGER INTERNATIONAL LIMITED, dont les coordonnées officielles ont été ajoutées. Hostinger regroupe plusieurs entités. Demander au support les coordonnées téléphoniques à indiquer pour l’hébergeur : le numéro du registraire HOSTINGER operations, UAB n’a pas été réutilisé pour une autre société.
+2. **Immatriculation.** Vérifier l’établissement et les mentions RNE/RCS applicables sur le justificatif officiel ; aucune mention de registre non confirmée n’a été inventée.
+3. **TVA.** Fournir le numéro intracommunautaire s’il est applicable. Le régime micro-entrepreneur ne suffit pas à conclure automatiquement à une absence de TVA.
+4. **Direction de publication.** Gesland Benjamin est indiqué en tant qu’éditeur de son portfolio ; corriger si une autre personne assume effectivement cette fonction.
 
-- L’adresse est visible dans `.contact__details` et peut être copiée.
-- Le lien sur l’adresse et le bouton « Parlons de ton projet » ouvrent l’application de messagerie avec `mailto:`.
-- Le profil GitHub reste accessible séparément.
+Les informations fournies sont intégrées mais ces points empêchent de présenter la page comme définitivement complète.
 
-Aucun message n’est envoyé automatiquement par le site. Pour vérifier le contact, clique sur le bouton puis envoie un message depuis une autre adresse et vérifie sa réception. Si aucune application de messagerie n’est configurée, copie l’adresse dans Gmail ou ton webmail.
+## Reste pour le domaine et Google Play
 
-## 2. Identité de l’entreprise — accueil et À propos
+- Communiquer l’URL publique pour vérifier HTTPS, accès public et déploiement.
+- Ajouter les URL canonique et `og:url` dans le `<head>` de `index.html`, une fois le domaine connu.
+- Valider la propriété du site dans Search Console et l’associer à Play Console.
+- Attendre le D-U-N-S et comparer nom/adresse avec le dossier Dun & Bradstreet et le profil de paiement Google.
+- Saisir directement dans Google les coordonnées privées de contact, et valider les coordonnées publiques choisies.
 
-**Fichier : `index.html`.**
+## Autres éléments du site
 
-Dans la section `id="about"`, au début du bloc `.about__text`, ajoute un paragraphe reliant « Ben » à l’entreprise déclarée à Google.
+- Préparer une page de confidentialité décrivant les traitements réels : échanges par e-mail, éventuels journaux de l’hébergeur et prestataires concernés. Ne pas affirmer qu’aucune donnée n’est traitée.
+- Confirmer le statut des projets et renseigner leurs liens lorsqu’ils sont publics.
+- Tester les liens e-mail/téléphone et la réception d’un message.
 
-Exemple à adapter :
+## Sources
 
-```html
-<p>
-  Je suis [prénom et nom], développeur indépendant.
-  J’exerce sous le nom [nom commercial éventuel], au sein de
-  [nom légal exact de l’entreprise et statut].
-</p>
-```
+- [Service Public : mentions obligatoires d’une entreprise](https://entreprendre.service-public.gouv.fr/vosdroits/F37351).
+- [Hostinger : conditions de service, section Coordonnées](https://www.hostinger.com/fr/legal/termes-universels-de-contrat-de-service).
+- [Google : informations requises pour le compte](https://support.google.com/googleplay/android-developer/answer/13628312?hl=fr).
 
-Si tu n’as pas de nom commercial, supprime la phrase correspondante. Reprends le nom légal de tes documents, sans en déduire un à partir de ton adresse e-mail. Si tu es entrepreneur individuel, adapte la présentation à ce statut ; si tu es en société, utilise sa dénomination exacte.
-
-Dans la section `id="hero"`, tu peux remplacer « Bonjour, moi c’est Ben » par ton nom ou nom commercial. Garder « Ben » comme identité visuelle est possible : c’est surtout le lien explicite avec l’entreprise qui manque actuellement.
-
-## 3. Mentions légales — nouvelle page et lien en bas du site
-
-**Fichier à créer : `mentions-legales.html`, à côté de `index.html`.**
-
-Prépare les informations suivantes, puis adapte le contenu à ton statut réel :
-
-| Information à récupérer | Où la placer dans la future page |
-| --- | --- |
-| Nom légal, prénom/nom si EI, statut ou forme juridique | Bloc « Éditeur du site » |
-| Nom commercial, s’il existe | À côté du nom légal, sans le remplacer |
-| Adresse professionnelle ou siège social | Bloc « Éditeur du site » |
-| SIREN/SIRET et mentions d’immatriculation applicables | Bloc « Identification de l’entreprise » |
-| Capital social si applicable à ta société | Bloc « Identification de l’entreprise » |
-| TVA intracommunautaire si applicable | Bloc « Identification de l’entreprise » |
-| E-mail et téléphone professionnels | Bloc « Contact » |
-| Responsable de publication | Bloc « Publication » |
-| Nom, adresse et téléphone de l’hébergeur effectif | Bloc « Hébergement » |
-
-Le contenu précis dépend de ton statut et de ton activité ; cette table est une liste de préparation, pas une certification juridique. Références officielles : [entrepreneur individuel](https://entreprendre.service-public.gouv.fr/vosdroits/F31228) et [société](https://entreprendre.service-public.gouv.fr/vosdroits/F37351), également référencées dans l’audit.
-
-**Dans `index.html`, cherche `<div class="footer__inner">`.** Ajoute ce lien à côté du copyright, seulement lorsque la page existe et est remplie :
-
-```html
-<a href="mentions-legales.html">Mentions légales</a>
-```
-
-Sur la nouvelle page, prévois un titre, un lien vers `index.html` et la feuille de style du site. Teste le lien après publication.
-
-## 4. Confidentialité — page adaptée aux traitements réels
-
-**Fichier à prévoir : `confidentialite.html`.**
-
-Décris les données effectivement traitées : échanges par e-mail, prestataire de messagerie, journaux éventuels de l’hébergement, et tout formulaire ou outil de mesure ajouté ultérieurement. Renseigne notamment responsable, finalités, bases légales, destinataires, conservation et exercice des droits selon la situation réelle.
-
-Ajoute ensuite un lien « Confidentialité » dans `.footer__inner`. N’affirme pas « aucune donnée collectée » sans prendre en compte l’hébergement et la messagerie. Le code actuel ne contient pas de formulaire connecté ni de traceur ; la configuration de l’hébergeur reste à examiner.
-
-Pour chaque application, prépare une information correspondant à ses propres traitements : la page du portfolio ne décrit pas automatiquement les données de FlowNova ou d’une autre application.
-
-## 5. URL publique — métadonnées et vérification Google
-
-**Fichier : `index.html`, dans `<head>`.**
-
-Une fois l’adresse définitive connue, ajoute les balises ci-dessous en remplaçant entièrement les valeurs d’exemple par l’URL publique réelle :
-
-```html
-<link rel="canonical" href="https://exemple.fr/" />
-<meta property="og:url" content="https://exemple.fr/" />
-```
-
-Si le portfolio est hébergé dans un sous-dossier, inclus son chemin. Une image de partage peut également être ajoutée avec `og:image`, en utilisant l’URL absolue d’une image existante.
-
-**En dehors du code :**
-
-1. Vérifie que cette URL est accessible publiquement en HTTPS, sans connexion.
-2. Ajoute le site dans Google Search Console et valide sa propriété selon la méthode proposée.
-3. Si tu utilises une validation DNS, le code se renseigne chez le gestionnaire DNS. Si tu choisis une balise HTML, copie la balise exacte fournie par Google dans `<head>`. Une validation par fichier nécessite de publier le fichier à l’emplacement demandé par Google.
-4. Renseigne l’URL exacte dans Play Console et effectue la demande de vérification/association.
-
-[Procédure officielle de vérification du site](https://support.google.com/googleplay/android-developer/answer/13205715?hl=en).
-
-## 6. D-U-N-S — dossier Google, pas un bloc à ajouter au portfolio
-
-Prépare ton D-U-N-S pour l’inscription et compare le nom/adresse de l’organisation avec le profil de paiement Google. Il n’y a pas de bloc D-U-N-S à ajouter au site dans ce guide. Ne le confonds pas avec le SIREN/SIRET.
-
-[Informations demandées par Google pour un compte organisation](https://support.google.com/googleplay/android-developer/answer/13628312?hl=fr).
-
-## 7. Projets et chiffres — informations à confirmer
-
-**Dans `index.html`, section `id="about"` :** vérifie « 2+ années », « 30+ projets » et « 15+ clients », ainsi que « Depuis deux ans » dans le texte. Corrige les valeurs si elles ne reflètent pas ton activité réelle.
-
-**Section `id="projects"` :** pour FlowNova et GamerChallenge, remplace « Parlons de ce projet » par des liens vers le site, la fiche de l’application ou le dépôt public, lorsqu’ils existent. Indique dans la description si le projet est en développement, en test ou publié, ainsi que ta contribution. N’ajoute pas un bouton vers une destination indisponible.
-
-## Checklist de mise en ligne
-
-- [ ] Identité de l’entreprise ajoutée dans « À propos ».
-- [x] Adresse e-mail fournie intégrée au site.
-- [ ] Envoi et réception d’un e-mail test vérifiés par toi.
-- [ ] Mentions légales complètes et accessibles depuis le pied de page.
-- [ ] Information de confidentialité adaptée aux traitements réels.
-- [ ] Chiffres et statut des projets confirmés.
-- [ ] Domaine public HTTPS et liens testés après publication.
-- [ ] URL canonique et URL de partage renseignées.
-- [ ] Propriété du site validée dans Search Console et association Google effectuée.
-- [ ] Informations du dossier organisation vérifiées.
-
-Le guide et les modifications sont locaux : ils ne publient rien et ne valident pas ton compte Google.
+Les modifications sont locales. Aucune transmission à Google ni publication n’a été effectuée.
