@@ -4,7 +4,7 @@ from urllib.parse import urlsplit, unquote
 import sys
 import html5lib
 ROOT = Path(__file__).resolve().parents[1]
-files = [ROOT / 'mentions-legales.html', *sorted((ROOT / 'telenoel').glob('*/index.html'))]
+files = [ROOT / 'mentions-legales.html', ROOT / 'telenoel/index.html', *sorted((ROOT / 'telenoel').glob('*/index.html'))]
 errors = []
 external = set()
 for path in files:
