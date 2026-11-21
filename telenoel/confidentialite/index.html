@@ -3,96 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="https://benjamingesland.dev/telenoel/confidentialite/index.html">
-  <meta name="referrer" content="no-referrer">
-  <meta name="description" content="Données locales, programmes TV, résumés, bandes-annonces YouTube, publicités, achats et droits relatifs à la confidentialité dans TéléNoël.">
   <title>Politique de confidentialité — TéléNoël</title>
-  <style>
-    :root { color-scheme: light; --paper:#fffdf7; --ink:#20392f; --green:#174b3a; --muted:#4e6158; --line:#cbd4ca; }
-    * { box-sizing:border-box; }
-    html { scroll-padding-top:1rem; }
-    body { margin:0; background:#f2f4ec; color:var(--ink); font:1.05rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    header, main, footer { width:min(100% - 2rem, 56rem); margin-inline:auto; }
-    header { padding:3rem 0 1.5rem; }
-    .brand { color:var(--green); font-weight:750; letter-spacing:.08em; }
-    h1,h2,h3 { line-height:1.25; color:var(--green); }
-    h1 { font-family:Georgia,serif; font-size:clamp(2rem,6vw,3.25rem); margin:.8rem 0; }
-    h2 { margin-top:0; font-size:1.45rem; }
-    h3 { font-size:1.1rem; }
-    p,li { overflow-wrap:anywhere; }
-    a { color:#07573d; text-underline-offset:.2em; }
-    a:hover { text-decoration-thickness:2px; }
-    :focus-visible { outline:3px solid #923600; outline-offset:4px; }
-    .skip { position:absolute; left:1rem; top:-8rem; padding:1rem; background:white; }
-    .skip:focus { top:1rem; }
-    .meta { color:var(--muted); }
-    section,nav,aside { background:var(--paper); padding:clamp(1rem,4vw,2rem); border:1px solid var(--line); border-radius:12px; margin-bottom:1.25rem; }
-    nav ul { padding-left:1.4rem; columns:2; column-gap:2rem; }
-    nav li { break-inside:avoid; margin-bottom:.4rem; }
-    dt { font-weight:700; margin-top:1rem; }
-    dd { margin:.3rem 0 0; }
-    footer { padding:1rem 0 3rem; color:var(--muted); }
-    @media(max-width:36rem) { nav ul { columns:1; } header { padding-top:2rem; } }
-    @media print { body { background:white; font-size:11pt; } header,main,footer { width:100%; } section,nav,aside { border-radius:0; } .skip { display:none; } a { color:inherit; } }
-  </style>
+  <meta name="description" content="Données traitées par l’application TéléNoël et par ce site : stockage local, programmes, publicité AdMob, achat Sans Pub, enrichissement du catalogue, vos droits.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#2B070C">
+  <link rel="canonical" href="https://benjamingesland.dev/telenoel/confidentialite/index.html">
+  <link rel="icon" href="../assets/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/telenoel.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<a class="skip" href="#contenu">Aller au contenu</a>
-<header>
-  <div class="brand"><span aria-hidden="true">✦</span> TéléNoël</div>
-  <h1>Politique de confidentialité</h1>
-  <p>Comprendre ce qui reste sur votre appareil et ce qui est transmis pour faire fonctionner TéléNoël.</p>
-  <p class="meta">Application TéléNoël 1.1.0 (iOS et Android) · Dernière mise à jour : <time datetime="2026-11-21">21 novembre 2026</time></p>
+<a class="tn-skip" href="#contenu">Aller au contenu</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.2 5.8 20.9l1.6-7L2 9.2l7.1-.6Z"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5c.5 5.2 2.3 8.8 10.5 10.5-8.2 1.7-10 5.3-10.5 10.5C11.5 17.3 9.7 13.7 1.5 12 9.7 10.3 11.5 6.7 12 1.5Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="garland" viewBox="0 0 350 44" preserveAspectRatio="none">
+    <path d="M-10 0 Q85 47 175 16 Q265 47 360 0" fill="none" stroke="currentColor" stroke-width=".8"/>
+    <g transform="translate(12 10)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(44 20)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(78 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(111 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(145 22)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(175 17)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(205 22)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(239 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(272 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(306 20)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(338 10)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+  </symbol>
+</svg>
+<header class="tn-header">
+  <nav class="tn-nav tn-wrap" aria-label="Navigation principale">
+    <a class="tn-brand" href="../index.html" aria-label="TéléNoël, accueil"><img src="../assets/telenoel-icon-192.webp" width="38" height="38" alt="">TéléNoël</a>
+    <button class="tn-menu-toggle" type="button" aria-expanded="false" aria-controls="tn-menu"><svg aria-hidden="true"><use href="#i-menu"/></svg><span>Menu</span></button>
+    <ul class="tn-menu" id="tn-menu">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../index.html#fonctionnalites">Fonctionnalités</a></li>
+      <li><a href="../index.html#faq">FAQ</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a class="tn-menu-cta" href="../index.html#telecharger">Télécharger</a></li>
+    </ul>
+  </nav>
 </header>
 <main id="contenu" tabindex="-1">
-  <nav aria-label="Sommaire"><ul>
-    <li><a href="#responsable">Responsable et contact</a></li><li><a href="#local">Données sur votre appareil</a></li>
-    <li><a href="#programmes">Programmes et serveur</a></li><li><a href="#enrichissement">Résumés et enrichissement du catalogue</a></li>
-    <li><a href="#youtube">Bandes-annonces et YouTube</a></li><li><a href="#publicite">Publicités et consentement</a></li>
-    <li><a href="#achats">Achat Sans Pub</a></li><li><a href="#rappels">Rappels et notifications</a></li>
-    <li><a href="#bases">Finalités et bases légales</a></li><li><a href="#conservation">Conservation</a></li>
-    <li><a href="#destinataires">Destinataires et transferts</a></li><li><a href="#droits">Vos droits</a></li>
-    <li><a href="#securite">Sécurité et public concerné</a></li><li><a href="#page">Cette page et ses mises à jour</a></li><li><a href="../conditions/index.html">Conditions d’utilisation</a></li>
-  </ul></nav>
-  <section id="responsable">
-    <h2>1. Responsable du traitement et contact</h2>
+  <div class="tn-doc-hero">
+    <svg class="tn-garland" aria-hidden="true" focusable="false"><use href="#garland"/></svg>
+    <div class="tn-wrap tn-doc-hero-inner">
+      <p class="tn-label"><svg aria-hidden="true"><use href="#i-star"/></svg>TéléNoël · informations</p>
+      <h1>Politique de confidentialité</h1>
+      <p class="tn-doc-meta">Application TéléNoël 1.0 et 1.1 (iOS et Android) et ce site · Dernière mise à jour&nbsp;: 21 novembre 2026</p>
+      <p class="tn-doc-intro">Comprendre ce qui reste sur votre appareil, ce qui est transmis pour faire fonctionner TéléNoël, et comment exercer vos droits.</p>
+      <nav aria-label="Documents TéléNoël"><ul class="tn-doc-tabs"><li><a href="../mentions-legales/index.html">Mentions légales</a></li><li><a href="../confidentialite/index.html" aria-current="page">Confidentialité</a></li><li><a href="../conditions/index.html">Conditions d’utilisation</a></li><li><a href="../sources/index.html">Sources et crédits</a></li></ul></nav>
+    </div>
+  </div>
+  <div class="tn-wrap tn-doc-layout">
+    <nav class="tn-toc" aria-labelledby="toc-titre"><h2 id="toc-titre">Sommaire</h2><ol><li><a href="#responsable">1. Responsable du traitement et contact</a></li><li><a href="#synthese">En bref&nbsp;: les traitements de TéléNoël</a></li><li><a href="#local">2. Vos données conservées sur l’appareil</a></li><li><a href="#programmes">3. Programmes TV et données de connexion</a></li><li><a href="#enrichissement">4. Résumés et enrichissement automatique du catalogue</a></li><li><a href="#youtube">5. Bandes-annonces et services de l’API YouTube</a></li><li><a href="#publicite">6. Google AdMob, UMP et vos choix</a></li><li><a href="#achats">7. Achat intégré Sans Pub</a></li><li><a href="#rappels">8. Rappels et notifications</a></li><li><a href="#bases">9. Finalités et bases légales</a></li><li><a href="#conservation">10. Conservation et suppression</a></li><li><a href="#destinataires">11. Destinataires et transferts internationaux</a></li><li><a href="#droits">12. Vos droits</a></li><li><a href="#securite">13. Sécurité et public concerné</a></li><li><a href="#site">14. Ce site web</a></li><li><a href="#page">15. Mises à jour de cette politique</a></li></ol></nav>
+    <article class="tn-paper">
+
+  <h2 id="responsable">1. Responsable du traitement et contact</h2>
     <p>TéléNoël est un guide de programmes TV français, sans compte utilisateur, sans streaming et sans replay. Le responsable du traitement est son éditeur, Benjamin Gesland, entrepreneur individuel. Consultez aussi les <a href="../mentions-legales/index.html">mentions légales</a> et les <a href="../sources/index.html">sources et crédits</a>.</p>
     <dl><dt>Identité juridique et adresse</dt><dd>Benjamin Gesland, entrepreneur individuel.<br>APPT 4 HLM LE CROTOY<br>7 rue de la Brasserie, 27500 Pont-Audemer, France.</dd>
     <dt>Contact pour vos données personnelles</dt><dd><a href="mailto:bengesland27500@gmail.com">bengesland27500@gmail.com</a></dd>
     <dt>Délégué à la protection des données</dt><dd>Aucun délégué n’est désigné : les traitements de TéléNoël ne relèvent pas des cas où l’article 37 du RGPD impose cette désignation. Le contact ci-dessus traite toutes les demandes relatives à vos données.</dd></dl>
-  </section>
-  <section id="local">
-    <h2>2. Vos données conservées sur l’appareil</h2>
+  
+  
+    <h2 id="synthese">En bref&nbsp;: les traitements de TéléNoël</h2>
+    <p>Le tableau ci-dessous résume chaque traitement. Les sections suivantes le détaillent. <strong>Données personnelles</strong> et <strong>données éditoriales</strong> sont distinguées&nbsp;: les secondes décrivent les films (titres, horaires, résumés), pas les utilisateurs.</p>
+    <div class="tn-table-scroll" role="region" aria-label="Tableau des traitements" tabindex="0">
+    <table>
+      <thead><tr><th scope="col">Traitement</th><th scope="col">Données</th><th scope="col">Base légale</th><th scope="col">Destinataires</th><th scope="col">Durée</th><th scope="col">Hors EEE</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Listes, préférences, rappels</th><td>Choix enregistrés sur votre téléphone</td><td>Exécution du contrat (art. 6.1.b)</td><td>Aucun&nbsp;: stockage local</td><td>Jusqu’à suppression par vous ou de l’application</td><td>Non (sauf sauvegarde du téléphone selon vos réglages)</td></tr>
+        <tr><th scope="row">Programme TV</th><td>Adresse IP, données techniques de connexion</td><td>Exécution du contrat (art. 6.1.b)</td><td>Railway (hébergement)</td><td>Journaux&nbsp;: 7 jours d’historique</td><td>Oui&nbsp;: États-Unis</td></tr>
+        <tr><th scope="row">Publicité et consentement</th><td>Adresse IP, identifiants techniques et publicitaires selon vos choix, interactions publicitaires</td><td>Consentement (personnalisation, art. 6.1.a)&nbsp;; intérêt légitime (annonces non personnalisées, art. 6.1.f)</td><td>Google (AdMob, UMP), responsable indépendant</td><td>Selon les règles de Google</td><td>Oui, avec garanties (section 11)</td></tr>
+        <tr><th scope="row">Achat Sans Pub</th><td>Identifiant pseudonyme, justificatifs et droits d’achat, données techniques</td><td>Exécution du contrat (art. 6.1.b)</td><td>Apple ou Google Play, RevenueCat</td><td>Tant que l’achat doit pouvoir être restauré</td><td>Oui&nbsp;: États-Unis (RevenueCat)</td></tr>
+        <tr><th scope="row">Enrichissement du catalogue</th><td>Données éditoriales sur les films&nbsp;; noms publics d’interprètes et de réalisateurs</td><td>Intérêt légitime (art. 6.1.f)</td><td>Railway&nbsp;; OpenAI (faits sur les films uniquement)</td><td>Tant que le film figure au catalogue</td><td>Oui&nbsp;: États-Unis</td></tr>
+        <tr><th scope="row">Bandes-annonces</th><td>Données de consultation reçues par YouTube quand vous ouvrez une vidéo</td><td>Traitement propre à Google, hors du contrôle de TéléNoël</td><td>YouTube (Google)</td><td>Selon les règles de Google</td><td>Selon Google</td></tr>
+        <tr><th scope="row">Contact et exercice des droits</th><td>Adresse e-mail, contenu du message</td><td>Obligation légale (droits RGPD) ou intérêt légitime (répondre)</td><td>Google (Gmail)</td><td>Le temps du traitement, puis prescription</td><td>Possible (Google)</td></tr>
+        <tr><th scope="row">Consultation de ce site</th><td>Adresse IP, données techniques de connexion</td><td>Intérêt légitime (art. 6.1.f)</td><td>Hostinger (hébergement)</td><td>Selon Hostinger</td><td>Selon Hostinger (garanties section 11)</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 id="local">2. Vos données conservées sur l’appareil</h2>
     <p>TéléNoël ne vous demande pas de créer un compte nominatif. Vos films à voir, films déjà vus, envies de revoir, chaînes suivies et préférences de rappel sont enregistrés dans le stockage local de l’application. Le format de stockage prévoit aussi des champs de favoris et de notes ; cela ne signifie pas que ces fonctions sont proposées dans l’interface actuelle. Le programme téléchargé et les titres des films sont également conservés pour la consultation hors ligne.</p>
-    <p>La recherche de titres et les filtres, dont le filtre « Inédits », sont exécutés sur ce catalogue local. Le texte saisi dans la recherche n’est pas envoyé par le code de TéléNoël à son serveur. Les collections, notes et rappels ne sont pas synchronisés avec ce serveur ni transmis volontairement aux SDK publicitaires ou d’achat.</p>
-    <p>Les illustrations hivernales, qui ne sont pas des affiches officielles de films, sont intégrées à l’application. Lorsqu’une affiche de film dont les droits ont été vérifiés est disponible, elle est téléchargée depuis le serveur TéléNoël, jamais depuis un service tiers, puis conservée dans le cache de l’application pour la consultation hors ligne ; elle en est retirée lorsque son autorisation prend fin. Les résumés et liens de bandes-annonces reçus avec le programme sont conservés de la même façon.</p>
-    <p>Depuis les réglages, vous pouvez exporter vos listes dans un fichier JSON, puis l’importer. Ce fichier non chiffré contient vos choix personnels ; il est envoyé uniquement à la destination que vous choisissez dans la feuille de partage du système, et une copie temporaire peut rester dans le cache privé de l’application. Les sauvegardes du téléphone peuvent également inclure des données locales selon les réglages du système et du compte Apple ou Google.</p>
-  </section>
-  <section id="programmes">
-    <h2>3. Programmes TV et données de connexion</h2>
+    <p>La recherche de titres et les filtres (dont le filtre « Inédits », à partir de la version 1.1) sont exécutés sur ce catalogue local. Le texte saisi dans la recherche n’est pas envoyé par le code de TéléNoël à son serveur. Les collections, notes et rappels ne sont pas synchronisés avec ce serveur ni transmis volontairement aux SDK publicitaires ou d’achat.</p>
+    <p>Les illustrations hivernales, qui ne sont pas des affiches officielles de films, sont intégrées à l’application. Lorsqu’une affiche de film dont les droits ont été vérifiés est disponible, elle est téléchargée depuis le serveur TéléNoël, jamais depuis un service tiers, puis conservée dans le cache de l’application pour la consultation hors ligne ; elle en est retirée lorsque son autorisation prend fin. Les résumés et liens de bandes-annonces reçus avec le programme (version 1.1) sont conservés de la même façon.</p>
+    <p>À partir de la version 1.1, vous pouvez, depuis les réglages, exporter vos listes dans un fichier JSON, puis l’importer. Ce fichier non chiffré contient vos choix personnels ; il est envoyé uniquement à la destination que vous choisissez dans la feuille de partage du système, et une copie temporaire peut rester dans le cache privé de l’application. Les sauvegardes du téléphone peuvent également inclure des données locales selon les réglages du système et du compte Apple ou Google.</p>
+  
+  <h2 id="programmes">3. Programmes TV et données de connexion</h2>
     <p>Pour afficher les programmes des huit jours glissants, l’application interroge l’API TéléNoël en transmettant la date de début et le nombre de jours demandés. Lorsqu’un film de vos listes ne figure plus dans le programme, l’application peut demander au serveur les informations de ce film à partir de son identifiant technique, sans transmettre son statut dans vos listes. Le serveur et son infrastructure reçoivent les informations nécessaires à la connexion, notamment l’adresse IP et les métadonnées HTTP. Aucun compte ni identifiant RevenueCat n’est ajouté à cette requête par l’application.</p>
     <p>L’API, le collecteur de programmes et la base de données PostgreSQL de TéléNoël sont hébergés par <strong>Railway, dans la région US West (Californie, États-Unis)</strong>, avec une réplique par service. Cette localisation concerne les services serveur ; vos collections personnelles restent stockées localement comme indiqué en section 2.</p>
     <p>Les requêtes transitent par le proxy d’entrée de Railway, qui termine la connexion HTTPS ; aucun autre CDN ou proxy n’est ajouté par TéléNoël. Les journaux du service conservent des événements techniques et des codes d’erreur ; le code de TéléNoël n’y enregistre ni vos listes, ni vos rappels, ni d’identifiant publicitaire ou d’achat. Les sauvegardes de la base de programmes et de la bibliothèque éditoriale contiennent le catalogue des films (et, pour la bibliothèque, les noms d’interprètes et de réalisateurs décrits en section 4), mais aucune donnée des utilisateurs de l’application : celle-ci n’en transmet pas au serveur.</p>
     <p>Le code de l’API limite les requêtes à partir de l’adresse de son interlocuteur réseau, qui peut être celle d’un proxy. Les événements techniques et codes d’erreur de l’API sont journalisés ; cela ne décrit pas tous les journaux de l’infrastructure d’hébergement.</p>
     <p>Les programmes sont récupérés par le backend auprès de XML TV Fr. Cette collecte serveur n’envoie pas les collections ou les rappels des utilisateurs au fournisseur de programmes.</p>
-  </section>
-  <section id="enrichissement">
-    <h2>4. Résumés et enrichissement automatique du catalogue</h2>
-    <p>Depuis la version 1.1.0, un service d’administration de TéléNoël, hébergé lui aussi par Railway, enrichit automatiquement le catalogue après chaque collecte de programmes : détection des nouveaux téléfilms, identification (titre original, année), recherche de sources documentaires, résumés, bandes-annonces et indication des inédits et nouveautés. Ce traitement porte sur les films, pas sur les utilisateurs : <strong>aucune donnée des utilisateurs de l’application</strong> (listes, rappels, préférences, identifiants publicitaires ou d’achat) n’y est utilisée ni transmise.</p>
+  
+  <h2 id="enrichissement">4. Résumés et enrichissement automatique du catalogue</h2>
+    <p>Un service d’administration de TéléNoël, hébergé lui aussi par Railway, enrichit automatiquement le catalogue après chaque collecte de programmes : détection des nouveaux téléfilms, identification (titre original, année), recherche de sources documentaires, résumés, bandes-annonces et indication des inédits et nouveautés. Les contenus qui en résultent sont affichés à partir de la version 1.1 de l’application. Ce traitement porte sur les films, pas sur les utilisateurs : <strong>aucune donnée des utilisateurs de l’application</strong> (listes, rappels, préférences, identifiants publicitaires ou d’achat) n’y est utilisée ni transmise.</p>
     <p>Pour identifier les films, ce service interroge <strong>Wikidata</strong>, <strong>Wikipédia</strong> et <strong>TheTVDB</strong>. Il conserve dans sa base privée les noms des interprètes et réalisateurs publiés par ces sources et par les programmes XML TV Fr, uniquement pour distinguer des films homonymes ; ces noms ne sont pas affichés dans l’application. Toute personne concernée peut s’y opposer ou en demander la rectification à l’adresse indiquée en section 1.</p>
     <p>Certains films présentent un résumé « L’histoire » en français. Il est rédigé à partir de faits extraits de sources libres identifiées, principalement Wikipédia, avec l’aide d’un modèle d’intelligence artificielle d’<strong>OpenAI</strong> (API OpenAI ; traitement possible aux États-Unis, voir section 11). Seuls ces faits documentaires et des consignes de rédaction sont envoyés à OpenAI ; les requêtes sont émises avec l’option de non-conservation des réponses (« store: false »). Les conditions d’OpenAI prévoient toutefois une conservation jusqu’à 30 jours des données d’API pour la détection des abus ; ces données ne servent pas à entraîner ses modèles. Avant publication, chaque résumé passe des contrôles automatiques (sources, licence, cohérence de l’identité, qualité du texte) ; il n’est pas systématiquement relu par une personne et peut être corrigé ou retiré à tout moment. Sans source suffisante, aucun résumé n’est affiché.</p>
     <p>Les badges « Inédit » et « Nouveauté » sont déduits des données de programmes (annonce de première diffusion par le guide TV, date d’arrivée du film dans le catalogue TéléNoël). Ils ne sont affichés que lorsque ces données le permettent.</p>
     <p><a href="https://openai.com/fr-FR/policies/privacy-policy/">Confidentialité OpenAI</a> · <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/fr">Confidentialité Wikimedia</a> · <a href="https://thetvdb.com/privacy-policy">Confidentialité TheTVDB</a> · <a href="../sources/index.html">Sources et attributions</a></p>
-  </section>
-  <section id="youtube">
-    <h2>5. Bandes-annonces et services de l’API YouTube</h2>
+  
+  <h2 id="youtube">5. Bandes-annonces et services de l’API YouTube</h2>
     <p>Pour trouver les bandes-annonces, le service d’administration de TéléNoël utilise les <strong>services de l’API YouTube</strong> (YouTube Data API, Google) : il recherche des vidéos publiées par des chaînes officielles ou des distributeurs et vérifie leurs informations publiques (titre, chaîne, durée, disponibilité). Cette utilisation n’implique aucune connexion à votre compte Google ou YouTube, aucun accès à vos données YouTube et aucune donnée des utilisateurs de l’application. Les informations obtenues sont revérifiées ou supprimées au plus tard tous les 30 jours.</p>
-    <p>Dans l’application, le bouton « Voir la bande-annonce » ouvre la vidéo dans l’application YouTube ou dans votre navigateur. TéléNoël ne lit, n’intègre, n’héberge ni n’enregistre aucune vidéo, et aucun lecteur YouTube n’est intégré à l’application. Lorsque vous ouvrez une bande-annonce, YouTube (Google) reçoit les données de cette consultation et applique ses propres conditions et sa politique de confidentialité ; TéléNoël ne lui transmet aucune donnée de vos listes. La version française est privilégiée lorsqu’elle existe ; à défaut, la version originale est signalée (VO).</p>
+    <p>Dans l’application, le bouton « Voir sur YouTube » (version 1.1) ouvre la vidéo dans l’application YouTube ou dans votre navigateur. TéléNoël ne lit, n’intègre, n’héberge ni n’enregistre aucune vidéo, et aucun lecteur YouTube n’est intégré à l’application. Lorsque vous ouvrez une bande-annonce, YouTube (Google) reçoit les données de cette consultation et applique ses propres conditions et sa politique de confidentialité ; TéléNoël ne lui transmet aucune donnée de vos listes. La version française est privilégiée lorsqu’elle existe ; à défaut, la version originale est signalée (VO).</p>
     <p>En ouvrant une vidéo YouTube, vous êtes soumis aux <a href="https://www.youtube.com/t/terms">Conditions d’utilisation de YouTube</a>. Le traitement de données par Google est décrit dans les <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>.</p>
-  </section>
-  <section id="publicite">
-    <h2>6. Google AdMob, UMP et vos choix</h2>
+  
+  <h2 id="publicite">6. Google AdMob, UMP et vos choix</h2>
     <p>TéléNoël intègre Google AdMob pour quatre emplacements de bannières. Leur diffusion dépend des autorisations, des choix de confidentialité, des droits Sans Pub et de la disponibilité des annonces. Selon le fonctionnement du SDK et les choix applicables, Google peut traiter l’adresse IP, une localisation approximative déduite de celle-ci, des identifiants techniques, les interactions publicitaires et des données de diagnostic ou de performance. TéléNoël ne demande pas l’accès à la position GPS.</p>
     <p>Google UMP gère les choix de confidentialité. Les informations de consentement sont actualisées, y compris pour les utilisateurs Sans Pub. Le bouton « Choix de confidentialité publicitaire » est disponible dans les réglages lorsque UMP l’exige. L’affichage dépend de l’autorisation de demander des annonces renvoyée par UMP ; un refus ne bloque pas l’accès au guide et peut conduire à des annonces non personnalisées, limitées ou à l’absence d’annonces selon les choix et la configuration. Vous pouvez rouvrir ce formulaire pour modifier ou retirer vos choix lorsqu’il est disponible ; contactez-nous si vous ne parvenez pas à y accéder.</p>
     <p>Sur <strong>iOS</strong>, des annonces personnalisées peuvent être demandées si UMP autorise les annonces, si l’autorisation ATT est accordée et si les signaux de consentement applicables permettent cette personnalisation. Lorsque le RGPD s’applique, le code vérifie aussi les choix relatifs aux finalités et à Google. Si ces conditions ne sont pas remplies, la demande reste non personnalisée, sous réserve de l’autorisation UMP de demander une annonce. Sur <strong>Android</strong>, le code demande des annonces non personnalisées après vérification UMP. <strong>Une annonce non personnalisée n’est pas une annonce sans traitement de données</strong> : diffusion, mesure et lutte contre la fraude peuvent encore impliquer des données techniques. Les annonces limitées constituent un mode distinct, déterminé par Google selon les choix et la configuration.</p>
@@ -100,21 +121,18 @@
     <p>Lorsque Sans Pub est reconnu, les quatre bannières sont masquées. En cas d’incertitude sur les droits, les annonces sont temporairement suspendues. L’achat ne supprime pas rétroactivement les données déjà traitées par les prestataires et n’arrête pas les vérifications d’achat ou de confidentialité.</p>
     <p>Le message de consentement Google (UMP) est publié pour iOS et Android ; la liste des partenaires publicitaires est présentée dans ce formulaire et peut être consultée à tout moment depuis le bouton des réglages. Les annonces sont fournies par le réseau AdMob, sans autre réseau publicitaire tiers en médiation. Pour les traitements publicitaires, Google agit en responsable de traitement indépendant, selon ses conditions de protection des données entre responsables de traitement.</p>
     <p><a href="https://policies.google.com/privacy?hl=fr">Confidentialité Google</a> · <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Utilisation des données par Google dans les applications partenaires</a></p>
-  </section>
-  <section id="achats">
-    <h2>7. Achat intégré Sans Pub</h2>
+  
+  <h2 id="achats">7. Achat intégré Sans Pub</h2>
     <p>Sans Pub est un achat unique non consommable, sans abonnement. Le prix applicable est celui affiché par la boutique avant confirmation. Apple traite le paiement sur iOS via StoreKit, et Google Play sur Android via Google Play Billing. TéléNoël ne reçoit pas votre numéro de carte bancaire.</p>
     <p>RevenueCat permet de vérifier et restaurer l’achat. Lorsque le service d’achat est configuré et disponible, son SDK est initialisé même si vous n’avez rien acheté. Il crée un identifiant technique dit « anonyme », qui reste un identifiant pseudonyme et ne signifie pas absence de données personnelles. Il traite les informations de transaction et de droits, ainsi que des informations techniques nécessaires au service (application, version du système, boutique et connexion, notamment l’adresse IP reçue lors des échanges). Les justificatifs d’achat et identifiants de transaction servent à vérifier les droits et leur restauration. TéléNoël ne lui fournit pas de nom, d’adresse e-mail ou de collection personnelle.</p>
     <p>La suppression de l’application n’efface pas automatiquement les informations détenues par Apple, Google Play ou RevenueCat et ne révoque pas l’achat.</p>
     <p><a href="https://www.revenuecat.com/privacy">Confidentialité RevenueCat</a> · <a href="https://www.revenuecat.com/dpa">Accord de traitement des données RevenueCat</a> · <a href="https://www.apple.com/legal/privacy/fr-ww/">Confidentialité Apple</a> · <a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store et confidentialité</a> · <a href="https://policies.google.com/privacy?hl=fr">Confidentialité Google Play et services Google</a></p>
-  </section>
-  <section id="rappels">
-    <h2>8. Rappels et notifications</h2>
+  
+  <h2 id="rappels">8. Rappels et notifications</h2>
     <p>L’autorisation d’afficher des notifications n’est pas demandée au démarrage, mais lorsque vous activez un rappel. Les rappels demandés sont programmés localement avec le système de notifications du téléphone, via Expo Notifications. Ils contiennent notamment le titre du film, la chaîne, l’horaire et les identifiants du film et de sa diffusion. Leur contenu peut apparaître sur l’écran verrouillé selon vos réglages.</p>
     <p>Le code examiné ne demande pas de jeton de notifications push et n’envoie pas ces rappels à un serveur de push Expo ou TéléNoël. Vous pouvez annuler un rappel dans l’application et modifier l’autorisation ou les aperçus dans les réglages du téléphone. Sur Android, l’autorisation « Alarmes et rappels » permet un déclenchement à l’heure exacte ; sans elle, le système peut retarder un rappel. L’autorisation système n’est pas, à elle seule, une qualification de la base légale RGPD.</p>
-  </section>
-  <section id="bases">
-    <h2>9. Finalités et bases légales</h2>
+  
+  <h2 id="bases">9. Finalités et bases légales</h2>
     <p>Les finalités identifiées sont : fournir les programmes et les fonctions demandées, enrichir le catalogue (identification des films, résumés, bandes-annonces, inédits et nouveautés), mémoriser vos choix locaux, gérer les rappels, vérifier Sans Pub, gérer les choix publicitaires et protéger le service contre les abus.</p>
     <dl>
       <dt>Fournir le guide, les listes, les rappels et l’achat Sans Pub</dt><dd>Exécution des <a href="../conditions/index.html">conditions d’utilisation</a> que vous acceptez en utilisant l’application (article 6, paragraphe 1, b du RGPD).</dd>
@@ -125,9 +143,8 @@
       <dt>Réponse à vos demandes et preuve des choix de consentement</dt><dd>Obligation légale (article 6, paragraphe 1, c, et articles 7 et 12 à 22 du RGPD).</dd>
     </dl>
     <p>Vous pouvez utiliser les collections sans acheter Sans Pub et refuser les notifications. Sans connexion à l’API, le programme ne peut pas être actualisé. Sans vérification d’achat, l’application ne peut pas confirmer ou restaurer les droits ; elle suspend alors les annonces en cas d’incertitude.</p>
-  </section>
-  <section id="conservation">
-    <h2>10. Conservation et suppression</h2>
+  
+  <h2 id="conservation">10. Conservation et suppression</h2>
     <dl>
       <dt>Collections et préférences locales</dt><dd>Pas d’expiration automatique prévue dans le code. Vous pouvez modifier les éléments dans l’application. Leur suppression complète dépend de l’effacement des données de l’application ; les sauvegardes système peuvent les conserver ou les restaurer. Il n’existe pas actuellement de bouton d’effacement global.</dd>
       <dt>Catalogue hors ligne</dt><dd>Le programme est remplacé lors des actualisations réussies. Les titres connus peuvent rester conservés au-delà des huit jours. La fréquence d’actualisation n’est pas une durée d’effacement.</dd>
@@ -139,9 +156,8 @@
       <dt>Données des prestataires</dt><dd>Google, Apple, Google Play et RevenueCat conservent les données liées aux annonces, aux achats et aux droits selon leurs propres politiques, notamment tant que l’achat Sans Pub doit pouvoir être restauré. Les requêtes envoyées à OpenAI peuvent être conservées jusqu’à 30 jours par OpenAI pour la détection des abus ; elles ne servent pas à entraîner ses modèles.</dd>
       <dt>Demandes relatives à vos données</dt><dd>Conservées le temps de traiter la demande, puis uniquement les éléments nécessaires pour prouver la réponse apportée, pendant la durée de prescription applicable.</dd>
     </dl>
-  </section>
-  <section id="destinataires">
-    <h2>11. Destinataires et transferts internationaux</h2>
+  
+  <h2 id="destinataires">11. Destinataires et transferts internationaux</h2>
     <p>Selon le service utilisé, les destinataires sont Benjamin Gesland, Railway pour l’hébergement de l’API et de PostgreSQL, Google pour la publicité et le consentement, Google/YouTube lorsque vous ouvrez une bande-annonce, RevenueCat pour les droits d’achat, Apple et Google Play pour les achats et fonctions du système, ainsi que Hostinger pour les pages web et Google/Gmail pour les messages adressés au contact de l’éditeur. OpenAI, TheTVDB et la Wikimedia Foundation (Wikipédia, Wikidata) sont sollicités par le service d’enrichissement du catalogue ; ils ne reçoivent aucune donnée des utilisateurs de l’application, mais leurs requêtes portent sur des films et peuvent contenir les noms publics d’interprètes ou de réalisateurs. Les politiques et accords de ces prestataires complètent cette information sans remplacer les obligations de l’éditeur.</p>
     <p>Les connexions à l’API hébergée en Californie impliquent un traitement de données techniques aux États-Unis, hors de l’Espace économique européen. D’autres prestataires peuvent également traiter des données hors de cet espace. La région d’hébergement de l’API et de PostgreSQL, ainsi que les pays de traitement des journaux, sauvegardes et sous-traitants, doivent être distingués.</p>
     <p>RevenueCat indique traiter les données de ses clients sur une infrastructure aux États-Unis. Les requêtes adressées à OpenAI peuvent être traitées aux États-Unis. Les services Google et Apple peuvent également impliquer des traitements hors de l’Espace économique européen.</p>
@@ -155,30 +171,67 @@
     </dl>
     <p>Vous pouvez obtenir une copie des garanties applicables aux transferts en écrivant à l’adresse indiquée en section 1.</p>
     <p><a href="https://railway.com/legal/privacy">Confidentialité Railway</a> · <a href="https://railway.com/legal/dpa">Accord de traitement des données Railway</a> · <a href="https://www.hostinger.com/legal/dpa">Accord de traitement des données Hostinger</a></p>
-  </section>
-  <section id="droits">
-    <h2>12. Vos droits</h2>
+  
+  <h2 id="droits">12. Vos droits</h2>
     <p>Dans les conditions prévues par le RGPD, vous pouvez demander l’accès, la rectification, l’effacement ou la limitation du traitement de vos données, ainsi que leur portabilité ou vous opposer à certains traitements. Ces droits dépendent notamment de la base légale applicable. Lorsque le traitement repose sur votre consentement, vous pouvez le retirer pour l’avenir sans remettre en cause les opérations antérieures licites.</p>
     <p>Pour exercer vos droits, écrivez à <a href="mailto:bengesland27500@gmail.com">bengesland27500@gmail.com</a> ou à l’adresse postale indiquée en section 1. Les données uniquement locales ne sont pas consultables à distance par l’éditeur. Pour retrouver un dossier d’achat pseudonyme, des informations strictement nécessaires pourront être demandées ; ne transmettez pas de mot de passe Apple ou Google ni de numéro de carte.</p>
     <p>Si vous nous contactez, votre adresse e-mail et le contenu de votre demande sont traités pour vous répondre et exercer vos droits. Les messages adressés au contact indiqué sont reçus via Gmail, un service Google. N’incluez que les informations utiles à votre demande.</p>
     <p>Le délai de réponse est en principe d’un mois. Il peut être prolongé de deux mois dans les cas prévus par le RGPD, avec information et justification dans le premier mois. Vous pouvez également saisir une autorité de contrôle, notamment la <a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL en France</a>.</p>
-  </section>
-  <section id="securite">
-    <h2>13. Sécurité et public concerné</h2>
+  
+  <h2 id="securite">13. Sécurité et public concerné</h2>
     <p>L’API définie dans les profils de distribution examinés utilise HTTPS pour les échanges de programmes.</p>
     <p>Le stockage local n’ajoute pas de chiffrement applicatif propre à TéléNoël ; la protection dépend notamment du verrouillage et du système de l’appareil. Aucun dispositif ne permet de promettre une sécurité absolue.</p>
     <p>TéléNoël s’adresse au grand public amateur de téléfilms de Noël, sans ciblage spécifique des enfants.</p>
     <p>La version publiée de l’application utilise exclusivement l’API HTTPS de TéléNoël. L’administration du catalogue est réservée à l’éditeur et protégée par mot de passe et double authentification ; les secrets du service ne sont jamais intégrés à l’application.</p>
     <p>TéléNoël ne vérifie pas l’âge de ses utilisateurs et ne demande pas aux régies de traiter les demandes d’annonces comme destinées aux enfants. Si vous êtes parent et pensez qu’un mineur a transmis des données personnelles à l’éditeur, contactez-nous.</p>
     <p>Le code de TéléNoël ne met pas en œuvre de décision automatisée produisant des effets juridiques sur l’utilisateur ; l’automatisation décrite en section 4 porte uniquement sur le contenu du catalogue. Cela ne constitue pas une description exhaustive des traitements propres aux prestataires publicitaires.</p>
-  </section>
-  <section id="page">
-    <h2>14. Cette page et ses mises à jour</h2>
-    <p>Cette page HTML n’intègre ni script, ni outil de mesure d’audience, ni publicité, ni police ou image distante. Cette page est accessible sur benjamingesland.dev et hébergée chez Hostinger, qui reçoit les données techniques de connexion, dont l’adresse IP, pour la servir. Le code de cette page ne dépose pas de cookie. Les sites liés appliquent leurs propres politiques lorsque vous les ouvrez.</p>
-    <p>Hostinger International Ltd. intervient en sous-traitant, via son réseau de diffusion (CDN) ; ses journaux techniques de connexion sont conservés selon son accord de traitement et ses politiques.</p>
-    <p>La date en tête de page permettra d’identifier les mises à jour de cette politique. Les évolutions des traitements, sur iOS comme sur Android, devront être reflétées dans le texte publié.</p>
-  </section>
+  
+  <h2 id="site">14. Ce site web</h2>
+    <p>Les pages TéléNoël de benjamingesland.dev ne déposent <strong>aucun cookie</strong>, n’utilisent aucun stockage du navigateur (ni <span lang="en">localStorage</span>, ni <span lang="en">sessionStorage</span>), aucun outil de mesure d’audience, aucune publicité ni aucun bouton de réseau social. Elles ne chargent aucune police, aucun script, aucune vidéo ni aucune image depuis un autre domaine. Aucun traceur soumis à consentement n’étant utilisé, aucun bandeau de consentement n’est affiché.</p>
+    <p>Le petit script du site (menu, animations et compteur avant Noël) s’exécute uniquement dans votre navigateur&nbsp;: le compteur est calculé à partir de l’horloge de votre appareil, sans aucun appel réseau.</p>
+    <p>Pour servir les pages, Hostinger International Ltd., hébergeur du site, reçoit les données techniques de connexion, dont l’adresse IP. Il intervient en sous-traitant, via son réseau de diffusion (CDN)&nbsp;; ses journaux sont conservés selon son <a href="https://www.hostinger.com/legal/dpa">accord de traitement des données</a> et ses politiques. Les sites vers lesquels pointent les liens (boutiques, YouTube, Wikipédia…) appliquent leurs propres politiques lorsque vous les ouvrez.</p>
+    <h2 id="page">15. Mises à jour de cette politique</h2>
+    <p>La date en tête de page identifie la version en vigueur. Toute évolution des traitements de l’application, sur iOS comme sur Android, ou de ce site sera reflétée dans cette page avant sa mise en œuvre. En cas de changement important, une information sera donnée dans l’application ou dans les notes de version.</p>
+
+      <p><a class="tn-back" href="#contenu">↑ Revenir en haut de la page</a></p>
+    </article>
+  </div>
 </main>
-<footer><nav aria-label="Informations TéléNoël"><a href="../confidentialite/index.html">Confidentialité</a> · <a href="../mentions-legales/index.html">Mentions légales</a> · <a href="../sources/index.html">Sources et attributions</a> · <a href="../conditions/index.html">Conditions d’utilisation</a></nav><p>TéléNoël · Politique de confidentialité</p><a href="#contenu">Revenir au contenu</a></footer>
+<footer class="tn-footer">
+  <div class="tn-wrap tn-footer-grid">
+    <div>
+      <img class="tn-footer-logo" src="../assets/telenoel-logo.webp" width="844" height="483" alt="TéléNoël" loading="lazy">
+      <p>Le guide indépendant des téléfilms de Noël à la télévision française.</p>
+    </div>
+    <div>
+      <h2>Télécharger</h2>
+      <ul>
+        <li><a href="https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427">App Store (iPhone)</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.gesland.telenoel">Google Play (Android)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:bengesland27500@gmail.com">bengesland27500@gmail.com</a></li>
+        <li><a href="../../index.html">Portfolio de l’éditeur</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Informations</h2>
+      <ul>
+        <li><a href="../mentions-legales/index.html">Mentions légales</a></li>
+        <li><a href="../confidentialite/index.html">Politique de confidentialité</a></li>
+        <li><a href="../conditions/index.html">Conditions d’utilisation</a></li>
+        <li><a href="../conditions/index.html#achat">Achat Sans Pub et vos droits</a></li>
+        <li><a href="../sources/index.html">Sources et crédits</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="tn-wrap tn-footer-note">
+    <p>TéléNoël n’est affiliée à aucune chaîne de télévision, ni approuvée ou sponsorisée par elles. Ce site ne dépose aucun cookie, n’utilise aucun outil de mesure d’audience et ne charge aucune ressource externe.</p>
+  </div>
+</footer>
+<script src="../assets/telenoel.js" defer></script>
 </body>
 </html>

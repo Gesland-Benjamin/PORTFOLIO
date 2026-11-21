@@ -3,127 +3,375 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TéléNoël — Téléfilms de Noël · Application iPhone et Android</title>
-  <meta name="description" content="TéléNoël : programmes TV des téléfilms de Noël, chaînes, horaires, inédits, résumés et bandes-annonces. Application gratuite sur iPhone et Android.">
-  <meta name="theme-color" content="#451826">
+  <title>TéléNoël — Programme TV des téléfilms de Noël · Application iPhone et Android</title>
+  <meta name="description" content="TéléNoël, l’application gratuite des téléfilms de Noël : programme TV du jour et des prochains jours, chaînes et horaires, listes À voir et Déjà vus, rappels avant diffusion. Sur iPhone et Android.">
+  <meta name="theme-color" content="#2B070C">
   <link rel="canonical" href="https://benjamingesland.dev/telenoel/">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/telenoel-logo.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/telenoel.css">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="TéléNoël">
-  <meta property="og:title" content="TéléNoël — Téléfilms de Noël · Application iPhone et Android">
-  <meta property="og:description" content="TéléNoël : programmes TV des téléfilms de Noël, chaînes, horaires, inédits, résumés et bandes-annonces. Application gratuite sur iPhone et Android.">
+  <meta property="og:title" content="TéléNoël — Les téléfilms de Noël à la télé, jour après jour">
+  <meta property="og:description" content="Programme TV des téléfilms de Noël, chaînes, horaires, listes et rappels. Application gratuite sur iPhone et Android.">
   <meta property="og:url" content="https://benjamingesland.dev/telenoel/">
-  <meta property="og:image" content="https://benjamingesland.dev/images/app-icon.png">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:alt" content="Logo TéléNoël : le traîneau du Père Noël au-dessus d’un village enneigé">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="TéléNoël — Téléfilms de Noël · Application iPhone et Android">
-  <meta name="twitter:description" content="TéléNoël : programmes TV des téléfilms de Noël, chaînes, horaires, inédits, résumés et bandes-annonces. Application gratuite sur iPhone et Android.">
-  <meta name="twitter:image" content="https://benjamingesland.dev/images/app-icon.png">
-  <meta name="twitter:image:alt" content="Logo officiel TéléNoël">
+  <meta property="og:image" content="https://benjamingesland.dev/telenoel/assets/og-telenoel.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Logo TéléNoël et capture de l’application affichant le programme des téléfilms de Noël">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TéléNoël — Les téléfilms de Noël à la télé, jour après jour">
+  <meta name="twitter:description" content="Programme TV des téléfilms de Noël, chaînes, horaires, listes et rappels. Application gratuite sur iPhone et Android.">
+  <meta name="twitter:image" content="https://benjamingesland.dev/telenoel/assets/og-telenoel.jpg">
+  <meta name="twitter:image:alt" content="Logo TéléNoël et capture de l’application affichant le programme des téléfilms de Noël">
+  <script>document.documentElement.classList.add("js")</script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "TéléNoël",
-  "description": "TéléNoël : programmes TV des téléfilms de Noël, chaînes, horaires, inédits, résumés et bandes-annonces. Application gratuite sur iPhone et Android.",
-  "url": "https://benjamingesland.dev/telenoel/",
-  "image": "https://benjamingesland.dev/images/app-icon.png",
-  "operatingSystem": "iOS, Android",
-  "applicationCategory": "EntertainmentApplication",
-  "inLanguage": "fr",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "EUR"
-  },
-  "installUrl": [
-    "https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427",
-    "https://play.google.com/store/apps/details?id=com.gesland.telenoel"
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://benjamingesland.dev/telenoel/#application",
+      "name": "TéléNoël",
+      "alternateName": "Telenoel",
+      "description": "Application gratuite consacrée aux téléfilms de Noël diffusés à la télévision française : programme du jour et des prochains jours, chaînes et horaires, recherche, listes À voir et Déjà vus, rappels avant diffusion.",
+      "url": "https://benjamingesland.dev/telenoel/",
+      "image": "https://benjamingesland.dev/telenoel/assets/og-telenoel.jpg",
+      "screenshot": [
+        "https://benjamingesland.dev/telenoel/assets/captures/programme-760.webp",
+        "https://benjamingesland.dev/telenoel/assets/captures/a-voir-760.webp",
+        "https://benjamingesland.dev/telenoel/assets/captures/deja-vus-760.webp",
+        "https://benjamingesland.dev/telenoel/assets/captures/rappels-760.webp",
+        "https://benjamingesland.dev/telenoel/assets/captures/recherche-760.webp"
+      ],
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "EntertainmentApplication",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "installUrl": [
+        "https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427",
+        "https://play.google.com/store/apps/details?id=com.gesland.telenoel"
+      ],
+      "author": { "@id": "https://benjamingesland.dev/telenoel/#editeur" },
+      "publisher": { "@id": "https://benjamingesland.dev/telenoel/#editeur" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://benjamingesland.dev/telenoel/#editeur",
+      "name": "Benjamin Gesland",
+      "jobTitle": "Développeur indépendant",
+      "url": "https://benjamingesland.dev/"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://benjamingesland.dev/telenoel/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "TéléNoël est-elle gratuite ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. TéléNoël se télécharge et s’utilise gratuitement ; elle est financée par des bannières publicitaires. Un achat unique facultatif, « Sans Pub », masque ces bannières. Ce n’est pas un abonnement : vous ne payez qu’une fois, au prix affiché par l’App Store ou Google Play avant validation." } },
+        { "@type": "Question", "name": "Puis-je regarder les téléfilms directement dans l’application ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. TéléNoël est un guide de programmes : elle vous indique quand et sur quelle chaîne passent les téléfilms de Noël. Elle ne diffuse aucun film, ne propose ni streaming ni replay et ne donne accès à aucun flux vidéo." } },
+        { "@type": "Question", "name": "Quelles chaînes sont disponibles ?", "acceptedAnswer": { "@type": "Answer", "text": "TF1, TMC, M6, W9, TFX, TF1 Séries Films, 6ter, Gulli et RMC Life ; CSTAR rejoint la liste avec la version 1.1." } },
+        { "@type": "Question", "name": "TéléNoël est-elle affiliée aux chaînes de télévision ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. TéléNoël est un guide indépendant. Elle n’est affiliée ni aux chaînes, ni aux producteurs ou distributeurs des films, et n’est ni approuvée ni sponsorisée par eux." } }
+      ]
+    }
   ]
 }
   </script>
-  <style>
-    :root{color-scheme:light;--wine:#451826;--wine-light:#653043;--cream:#fff8ec;--gold:#e6c48a;--ink:#39242a;--muted:#705b60;--line:#dfd0c0}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}body{margin:0;background:var(--cream);color:var(--ink);font:1rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-underline-offset:.25em}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible{outline:3px solid #b36b24;outline-offset:5px}p,h1,h2,h3,a,strong,small{overflow-wrap:anywhere}.hero>*,.features>*,.collections>*,.list-row>*,.publisher>*{min-width:0}h1,h2,h3,p{margin-top:0}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.12}h2{font-size:clamp(2rem,4vw,3.3rem)}h3{font-size:1.2rem;line-height:1.4}.wrap{width:min(1120px,calc(100% - 3rem));margin-inline:auto}.skip{position:absolute;top:-10rem;left:1rem;padding:.8rem 1rem;background:var(--cream);color:var(--wine);z-index:10}.skip:focus{top:1rem}.masthead{background:var(--wine);color:var(--cream)}nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.6rem;border-bottom:1px solid #ffffff26}.brand{font:1.8rem Georgia,serif;text-decoration:none}.brand span{color:var(--gold);margin-right:.5rem}.nav-links{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.9rem}.nav-links a{text-decoration:none}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:700}.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:4rem;align-items:center;padding-block:5rem 6rem}.hero .eyebrow{color:var(--gold)}h1{font-size:clamp(2.5rem,5.2vw,4.6rem);letter-spacing:-.035em;margin-bottom:1.5rem}h1 span{display:block;font-size:.48em;letter-spacing:0;color:var(--gold);margin-bottom:.7rem}.intro{max-width:34rem;color:#f0dfd8;font-size:1.1rem}.actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:2rem}.button{display:inline-block;padding:.85rem 1.4rem;border-radius:6px;background:var(--gold);color:var(--wine);font-weight:650;text-decoration:none}.text-link{font-size:.9rem}.hero-note{font-size:.82rem;color:#e7d6d0;margin:1.3rem 0 0}.winter{position:relative;aspect-ratio:4/5;border-radius:48% 48% 12px 12px;border:1px solid #d9b77870;background:radial-gradient(ellipse at 50% 10%,#99604380,transparent 60%),linear-gradient(155deg,#643041,#2d1721);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:3rem 1.6rem;box-shadow:0 25px 65px #200a1840}.winter:before,.winter:after{content:"✦";position:absolute;color:var(--gold);font-size:1.3rem;animation:glow 4s ease-out both}.winter:before{top:15%;left:18%}.winter:after{right:15%;bottom:22%;animation-delay:-2s}.winter-inner{width:100%;position:relative}.winter-star{font-size:3.2rem;color:var(--gold);line-height:1}.winter-title{font:clamp(2rem,3.5vw,3rem)/1.15 Georgia,serif;margin:1.5rem 0}.winter-rule{width:3rem;border-top:1px solid var(--gold);margin:1.5rem auto}.winter-caption{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:#eadbc7}.ribbon{padding:1.3rem 0;border-bottom:1px solid var(--line);text-align:center;color:var(--muted);font-size:.9rem}.section{padding-block:5rem}.section-heading{max-width:42rem;margin-bottom:2.5rem}.section-heading .eyebrow{color:#805122}.section-heading p:last-child{color:var(--muted)}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}.feature{padding:2rem;border:1px solid var(--line);border-radius:10px;background:#fffdf7}.number{display:block;color:#865429;font:1.5rem Georgia,serif;margin-bottom:1.8rem}.feature p{color:var(--muted);margin-bottom:0}.collections{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding-top:1rem}.collections p{color:var(--muted)}.list-stack{display:grid;gap:.8rem}.list-row{display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;border:1px solid var(--line);border-radius:8px;background:#fffdf7}.list-row span{display:grid;place-items:center;width:2.5rem;height:2.5rem;flex-shrink:0;border-radius:50%;color:var(--wine);background:#f3e7da}.list-row strong{display:block}.list-row small{color:var(--muted)}.availability{background:var(--wine);color:var(--cream);text-align:center;padding-block:4.5rem}.availability .eyebrow{color:var(--gold)}.availability>div>p{max-width:40rem;margin-inline:auto;color:#f0dfd8}.stores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:36rem;margin:2rem auto}.store{padding:1.2rem;border:1px solid #ffffff40;border-radius:8px;text-align:left}.store strong{display:block;font-size:1.25rem}.store span{font-size:.85rem;color:#eadbc7}.store p{margin:.4rem 0 0;font-size:.85rem;color:var(--gold)}.publisher{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding-block:3.5rem}.publisher h2{font-size:1.8rem;margin-bottom:.5rem}.publisher p{margin:0;color:var(--muted)}.publisher a{flex-shrink:0}footer{border-top:1px solid var(--line);padding-block:2rem;color:var(--muted);font-size:.85rem}.footer-links{display:flex;gap:1rem 1.5rem;flex-wrap:wrap;margin-bottom:1rem}footer p{max-width:55rem;margin-bottom:0}@keyframes glow{from{opacity:.4}to{opacity:1}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important}}@media(max-width:760px){.hero{grid-template-columns:1fr;gap:3rem;padding-block:3rem}.winter{width:min(100%,360px);margin-inline:auto;aspect-ratio:1/1}.features{grid-template-columns:1fr}.collections{grid-template-columns:1fr;gap:2rem}.section{padding-block:3rem}.publisher{align-items:flex-start;flex-direction:column}.nav-links{gap:.6rem 1rem}nav{align-items:flex-start;flex-wrap:wrap}.brand{font-size:1.5rem}.nav-links{justify-content:flex-start;font-size:.8rem}.stores{grid-template-columns:1fr}}@media print{.masthead,.availability{background:white;color:var(--ink)}.hero{display:block}.winter,.skip{display:none}.hero p,.hero .eyebrow,.availability>div>p,.store span,.store p{color:var(--ink)}.section{padding-block:1rem}}
-
-    /* Official badge artwork is kept intact, with space around each store mark. */
-    .brand{display:inline-flex;align-items:center;gap:.65rem}.brand img{border-radius:9px}
-    .hero h1{margin-bottom:.6rem}.hero h1 .tree{display:inline;font-size:.7em}
-    .tagline{overflow-wrap:normal;font:clamp(1.7rem,3vw,2.4rem)/1.2 Georgia,serif;color:var(--gold);max-width:30rem;margin-bottom:1rem}
-    .download-badges{display:flex;flex-wrap:wrap;align-items:center;gap:0;margin-top:.5rem}
-    .badge-link{display:flex;align-items:center;justify-content:center;min-height:72px;border-radius:6px;flex-shrink:0}
-    .badge-link img{display:block;object-fit:contain;height:auto}
-    .badge-link.apple{padding:12px}.badge-link.apple img{width:151.81px;height:48px}
-    .badge-link.google img{width:186px}
-    .discover{display:inline-flex;align-items:center;gap:.3rem;min-height:44px;margin-top:.25rem}
-    .store{display:block;text-decoration:none}.store:hover{border-color:var(--gold);background:#ffffff0a}.store strong{font-size:1.05rem}
-    @media(max-width:760px){
-      .wrap{width:min(1120px,calc(100% - 2rem))}nav{padding-block:.75rem;gap:.5rem}.nav-links{width:100%}.nav-links a{display:inline-flex;align-items:center;min-height:44px}
-      .hero{padding-block:1.25rem 3rem;gap:2rem}.hero .eyebrow{font-size:.65rem;letter-spacing:.09em;margin-bottom:.75rem}
-      .winter{aspect-ratio:auto;min-height:390px;padding:2rem 1.6rem}.winter-title{font-size:1.8rem}.hero h1{font-size:2.65rem}.tagline{font-size:1.8rem}.intro{font-size:1rem;line-height:1.5;margin-bottom:.4rem}
-      .download-badges{margin-inline:-12px}.badge-link.apple{padding:10px}.badge-link.apple img{width:126.51px;height:40px}.badge-link.google img{width:158px}
-    }
-  </style>
 </head>
 <body>
-<a class="skip" href="#contenu">Aller au contenu</a>
-<header class="masthead">
-  <nav class="wrap" aria-label="Navigation principale">
-    <a class="brand" href="./" aria-label="TéléNoël, accueil"><img src="assets/telenoel-icon.png" width="40" height="40" alt="">TéléNoël</a>
-    <div class="nav-links"><a href="#fonctionnalites">L’application</a><a href="#nouveautes">Nouveautés</a><a href="#disponibilite">Télécharger</a><a href="#editeur">L’éditeur</a></div>
+<a class="tn-skip" href="#contenu">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-snow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M12 2l-2.2 2.2M12 2l2.2 2.2M12 22l-2.2-2.2M12 22l2.2-2.2M3.3 7l3 .8M3.3 7l.8-3M20.7 17l-3-.8m3 .8-.8 3M3.3 17l.8 3m-.8-3 3-.8M20.7 7l-.8-3m.8 3-3 .8"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5c.5 5.2 2.3 8.8 10.5 10.5-8.2 1.7-10 5.3-10.5 10.5C11.5 17.3 9.7 13.7 1.5 12 9.7 10.3 11.5 6.7 12 1.5Z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.2 5.8 20.9l1.6-7L2 9.2l7.1-.6Z"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="13" rx="2.5"/><path d="m8 2.5 4 3.5 4-3.5M8 22h8"/></g></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M7.5 13.5h2M11 13.5h2M14.5 13.5h2M7.5 17h2M11 17h2"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></g></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3.5 5h17l-6.5 8v5.5l-4 2V13Z"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M6 3h12v18l-6-4.5L6 21Z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15ZM10 21h4"/></symbol>
+  <symbol id="i-offline" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M7 18.5a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.5 1.5 3.8 3.8 0 0 1-.4 7.5ZM12 10v6m-2.5-2.5L12 16l2.5-2.5"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="9" width="17" height="11.5" rx="2"/><path d="M2.5 9h19M12 9v11.5M12 9C9 9 7 7.5 8 5.5s4 .5 4 3.5c0-3 3-5.5 4-3.5S15 9 12 9"/></g></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3.5 12.6V4.5a1 1 0 0 1 1-1h8.1l7.9 7.9a1.5 1.5 0 0 1 0 2.1l-6.9 6.9a1.5 1.5 0 0 1-2.1 0ZM8 8h.01"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 6.5C10 4.8 6.8 4.3 3 4.5v14c3.8-.2 7 .3 9 2 2-1.7 5.2-2.2 9-2v-14c-3.8-.2-7 .3-9 2Zm0 0v14"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></g></symbol>
+  <symbol id="i-live" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="2.5"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/></g></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="3.5" width="18" height="17" rx="3"/><path d="m3.5 17 5-5 4 4 2.5-2.5 5.5 5.5"/><circle cx="15.5" cy="8.5" r="1.6"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="garland" viewBox="0 0 350 44" preserveAspectRatio="none">
+    <path d="M-10 0 Q85 47 175 16 Q265 47 360 0" fill="none" stroke="currentColor" stroke-width=".8"/>
+    <g transform="translate(12 10)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(44 20)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(78 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(111 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(145 22)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(175 17)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(205 22)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(239 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(272 25)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(306 20)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+    <g transform="translate(338 10)"><path d="M0 0v4" stroke="currentColor"/><circle class="halo" cy="5" r="8" opacity=".09"/><circle class="halo" cy="5" r="4.5" opacity=".18"/><circle class="bulb" cy="5" r="2"/></g>
+  </symbol>
+  <symbol id="branch" viewBox="0 0 220 120">
+    <path d="M4 112C60 92 118 62 214 10" fill="none" stroke="#5B3A2E" stroke-width="3" stroke-linecap="round"/>
+    <g fill="none" stroke-linecap="round" stroke-width="2.4">
+      <path stroke="#3E7A63" d="M20 105l-6-16M20 105l14 6M38 98l-5-17M38 98l15 5M56 90l-4-17M56 90l15 4M74 82l-3-17M74 82l15 3M92 73l-2-17M92 73l15 2M110 64l-1-17M110 64l15 1M128 54l0-16M128 54l14 0M146 44l1-15M146 44l13-1M164 34l2-14M164 34l12-2M182 24l3-13M182 24l11-3M198 16l3-11M198 16l10-3"/>
+      <path stroke="#285747" d="M28 102l-12-8M28 102l10 12M46 94l-11-9M46 94l10 12M64 86l-11-9M64 86l9 12M82 78l-10-10M82 78l9 12M100 69l-10-10M100 69l8 12M118 59l-9-10M118 59l8 12M136 49l-9-10M136 49l7 12M154 39l-8-10M154 39l7 11M172 29l-7-9M172 29l6 10M190 20l-6-8M190 20l5 9"/>
+      <path stroke="#1E5444" d="M30 104l-3-12M66 88l-2-13M102 71l-1-13M138 51l0-13M174 31l2-11"/>
+    </g>
+  </symbol>
+  <symbol id="bauble" viewBox="0 0 40 52">
+    <path d="M20 0v9" stroke="#C8A967" stroke-width="1.2"/>
+    <rect x="15" y="8" width="10" height="6" rx="1.5" fill="#E8BE72"/>
+    <circle cx="20" cy="31" r="17" fill="currentColor"/>
+    <path d="M7 27q13-7 26 0" fill="none" stroke="#F5DCA5" stroke-width="1.2" opacity=".8"/>
+    <path d="M6 34q14 7 28 0" fill="none" stroke="#F5DCA5" stroke-width="1" opacity=".55"/>
+    <ellipse cx="13.5" cy="24" rx="4" ry="2.6" fill="#fff" opacity=".35" transform="rotate(-35 13.5 24)"/>
+  </symbol>
+</svg>
+
+<header class="tn-header">
+  <nav class="tn-nav tn-wrap" aria-label="Navigation principale">
+    <a class="tn-brand" href="./" aria-label="TéléNoël, accueil"><img src="assets/telenoel-icon-192.webp" width="38" height="38" alt="">TéléNoël</a>
+    <button class="tn-menu-toggle" type="button" aria-expanded="false" aria-controls="tn-menu"><svg aria-hidden="true"><use href="#i-menu"/></svg><span>Menu</span></button>
+    <ul class="tn-menu" id="tn-menu">
+      <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+      <li><a href="#captures">Captures d’écran</a></li>
+      <li><a href="#chaines">Chaînes</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="tn-menu-cta" href="#telecharger">Télécharger</a></li>
+    </ul>
   </nav>
 </header>
-<main id="contenu" tabindex="-1">
-  <div class="masthead">
-    <section class="hero wrap" aria-labelledby="titre">
-      <div>
-        <p class="eyebrow">Gratuite au téléchargement · iPhone &amp; Android</p>
-        <h1 id="titre">TéléNoël <span class="tree" aria-hidden="true">🎄</span></h1>
-        <p class="tagline">Tous les téléfilms de Noël au même endroit&nbsp;!</p>
-        <p class="intro">Retrouvez les programmes TV, les horaires de diffusion et préparez vos prochaines soirées de Noël.</p>
-        <div class="download-badges" aria-label="Télécharger gratuitement TéléNoël">
-          <a class="badge-link apple" href="https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427" aria-label="Télécharger sur l’App Store pour iPhone"><img src="assets/app-store-fr.svg" width="127" height="40" alt="Télécharger sur l’App Store"></a>
-          <a class="badge-link google" href="https://play.google.com/store/apps/details?id=com.gesland.telenoel" aria-label="Disponible sur Google Play pour Android"><img src="assets/google-play-fr.png" width="646" height="250" alt="Disponible sur Google Play"></a>
-        </div>
-        <a class="text-link discover" href="#fonctionnalites">Découvrir l’application <span aria-hidden="true">↓</span></a>
 
+<main id="contenu" tabindex="-1" data-snow>
+
+  <section class="hm-hero" aria-labelledby="hero-titre">
+    <svg class="tn-garland tn-garland-anim hm-hero-garland" aria-hidden="true" focusable="false"><use href="#garland"/></svg>
+    <div class="hm-hero-inner tn-wrap">
+      <div class="hm-hero-text">
+        <h1 id="hero-titre" class="hm-logo"><img src="assets/telenoel-logo.webp" width="844" height="483" alt="TéléNoël" fetchpriority="high"><span class="tn-sr"> — l’application des téléfilms de Noël</span></h1>
+        <p class="tn-label"><svg aria-hidden="true"><use href="#i-star"/></svg>Les belles histoires reviennent</p>
+        <p class="hm-tagline">Toute la magie des téléfilms de Noël dans votre poche.</p>
+        <p class="hm-intro">Le programme TV des téléfilms de Noël, jour après jour : chaînes, horaires, prochaines diffusions et rappels pour ne rien manquer. Préparez vos soirées, gardez vos coups de cœur et retrouvez les histoires déjà vues.</p>
+        <div class="tn-stores hm-stores" role="group" aria-label="Télécharger TéléNoël gratuitement">
+          <a class="tn-store apple" href="https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427"><img src="assets/app-store-fr.svg" width="127" height="40" alt="Télécharger dans l’App Store"></a>
+          <a class="tn-store google" href="https://play.google.com/store/apps/details?id=com.gesland.telenoel"><img src="assets/google-play-fr.png" width="646" height="250" alt="Disponible sur Google Play"></a>
+        </div>
+        <p class="hm-hero-note"><svg aria-hidden="true"><use href="#i-snow"/></svg>Gratuite · iPhone et Android · sans compte à créer</p>
       </div>
-      <div class="winter" aria-hidden="true"><div class="winter-inner"><div class="winter-star">✧</div><div class="winter-title">Un plaid.<br>Un chocolat chaud.<br>Votre prochain<br>film de Noël.</div><div class="winter-rule"></div><div class="winter-caption">La magie est au programme</div></div></div>
-    </section>
-  </div>
-  <div class="ribbon"><div class="wrap">Un guide TV français · Vos listes sur votre appareil · Sans compte utilisateur</div></div>
-  <section class="section wrap" id="fonctionnalites" aria-labelledby="fonctionnalites-titre">
-    <div class="section-heading"><p class="eyebrow">Le rendez-vous des belles histoires</p><h2 id="fonctionnalites-titre">Moins de recherches.<br>Plus de soirées de Noël.</h2><p>Tout pour choisir votre prochain téléfilm et retrouver ceux qui vous donnent envie de vous installer devant la télévision.</p></div>
-    <div class="features">
-      <article class="feature"><span class="number" aria-hidden="true">01 /</span><h3>Le programme, en un clin d’œil</h3><p>Consultez les téléfilms de Noël du jour et des prochains jours pour préparer vos moments télé.</p></article>
-      <article class="feature"><span class="number" aria-hidden="true">02 /</span><h3>Retrouvez une envie de film</h3><p>Recherchez un titre dans le catalogue et repérez les téléfilms que vous souhaitez regarder.</p></article>
-      <article class="feature"><span class="number" aria-hidden="true">03 /</span><h3>La bonne chaîne, au bon moment</h3><p>Retrouvez les chaînes et les horaires de diffusion. Les programmes peuvent évoluer selon les chaînes.</p></article>
+      <figure class="hm-hero-visual">
+        <div class="hm-glow" aria-hidden="true"></div>
+        <svg class="hm-bauble one" aria-hidden="true" focusable="false"><use href="#bauble"/></svg>
+        <svg class="hm-bauble two" aria-hidden="true" focusable="false"><use href="#bauble"/></svg>
+        <img class="hm-hero-shot" src="assets/captures/programme-420.webp" srcset="assets/captures/programme-420.webp 420w, assets/captures/programme-760.webp 760w" sizes="(max-width: 900px) 70vw, 380px" width="420" height="913" alt="Écran Programme de TéléNoël : les téléfilms de Noël du jour, avec leur chaîne, leur horaire et les boutons À voir et Déjà vu.">
+        <figcaption class="tn-sr">Visuel de l’App Store présentant l’écran Programme de TéléNoël 1.0.</figcaption>
+      </figure>
     </div>
   </section>
-  <section class="section wrap" id="nouveautes" aria-labelledby="nouveautes-titre">
-    <div class="section-heading"><p class="eyebrow">Nouveau dans la version 1.1</p><h2 id="nouveautes-titre">Des fiches plus riches,<br>au fil de la saison.</h2><p>Le catalogue s’enrichit automatiquement à mesure que de nouveaux téléfilms arrivent au programme. Résumés et bandes-annonces sont ajoutés lorsque des sources fiables existent : tous les films n’en disposent pas.</p></div>
-    <div class="features">
-      <article class="feature"><span class="number" aria-hidden="true">04 /</span><h3>Inédits et nouveautés</h3><p>Un badge « Inédit » signale les premières diffusions annoncées par le guide TV, et un filtre les réunit. Le badge « Nouveauté » repère les téléfilms récemment arrivés au programme, lorsque les données le permettent.</p></article>
-      <article class="feature"><span class="number" aria-hidden="true">05 /</span><h3>L’histoire, en quelques lignes</h3><p>Pour certains films, un court résumé en français vous aide à choisir, rédigé à partir de sources libres comme Wikipédia, dont chaque fiche indique les références.</p></article>
-      <article class="feature"><span class="number" aria-hidden="true">06 /</span><h3>La bande-annonce, sur YouTube</h3><p>Quand une bande-annonce officielle est disponible, un bouton l’ouvre sur YouTube. Beaucoup de téléfilms n’existent qu’en version originale : elle est alors signalée.</p></article>
+
+  <section class="hm-countdown-band" aria-labelledby="cd-titre">
+    <div class="tn-wrap">
+      <div class="hm-countdown tn-reveal" data-christmas-countdown>
+        <svg class="tn-garland tn-garland-anim hm-cd-garland" aria-hidden="true" focusable="false"><use href="#garland"/></svg>
+        <svg class="hm-branch left" aria-hidden="true" focusable="false"><use href="#branch"/></svg>
+        <svg class="hm-branch right" aria-hidden="true" focusable="false"><use href="#branch"/></svg>
+        <svg class="hm-cd-star s1 tn-twinkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <svg class="hm-cd-star s2 tn-twinkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <svg class="hm-cd-star s3 tn-twinkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <svg class="hm-cd-flake f1" aria-hidden="true"><use href="#i-snow"/></svg>
+        <svg class="hm-cd-flake f2" aria-hidden="true"><use href="#i-snow"/></svg>
+        <h2 id="cd-titre" class="hm-cd-headline" data-cd-headline>La magie de Noël approche…</h2>
+        <p class="hm-cd-number" aria-hidden="true"><span data-cd-number></span></p>
+        <p class="hm-cd-unit" aria-hidden="true" data-cd-unit></p>
+        <p class="tn-sr" data-cd-sr></p>
+        <p class="hm-cd-fallback">Rendez-vous le 25 décembre, devant vos plus belles histoires.</p>
+        <p class="hm-cd-tagline" data-cd-tagline>Chaque jour un peu plus de magie</p>
+      </div>
     </div>
   </section>
-  <section class="section wrap collections" aria-labelledby="listes-titre">
-    <div><p class="eyebrow">Vos films, vos traditions</p><h2 id="listes-titre">Une liste pour<br>chaque envie.</h2><p>Organisez simplement vos films de Noël. Gardez de côté vos prochaines découvertes, retrouvez les histoires déjà vues et celles que vous aimeriez revoir.</p><p>Vos listes sont conservées localement sur votre appareil.</p></div>
-    <div class="list-stack"><div class="list-row"><span aria-hidden="true">＋</span><div><strong>À voir</strong><small>Pour vos prochaines soirées.</small></div></div><div class="list-row"><span aria-hidden="true">✓</span><div><strong>Déjà vus</strong><small>Pour garder le fil de vos découvertes.</small></div></div><div class="list-row"><span aria-hidden="true">↻</span><div><strong>Envie de revoir</strong><small>Parce que certaines histoires se savourent encore.</small></div></div></div>
+
+  <section class="hm-section" id="fonctionnalites" aria-labelledby="fonctionnalites-titre">
+    <div class="tn-wrap">
+      <header class="hm-heading tn-reveal">
+        <p class="tn-label"><svg aria-hidden="true"><use href="#i-star"/></svg>Disponible aujourd’hui</p>
+        <h2 id="fonctionnalites-titre">Le programme des téléfilms de Noël, en un clin d’œil.</h2>
+        <div class="tn-rule" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></div>
+        <p>Tout ce qu’il faut pour choisir votre prochain film, ne jamais le manquer et garder le souvenir de ceux qui vous ont fait fondre.</p>
+      </header>
+      <ul class="hm-features" role="list">
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-tv"/></svg></span><h3>Les diffusions du jour</h3><p>Ouvrez l’application : les téléfilms de Noël programmés aujourd’hui vous attendent, avec leur chaîne et leur horaire.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-calendar"/></svg></span><h3>Les prochains jours</h3><p>Parcourez le calendrier des téléfilms de Noël sur plusieurs jours pour organiser vos soirées à l’avance.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-clock"/></svg></span><h3>Horaires et chaînes</h3><p>Chaque diffusion indique son heure de début et de fin et la chaîne qui la propose, selon les horaires annoncés.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-search"/></svg></span><h3>Recherche de téléfilms</h3><p>Un titre en tête&nbsp;? Retrouvez-le en quelques lettres dans le catalogue de la saison.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-filter"/></svg></span><h3>Vos chaînes favorites</h3><p>Choisissez vos chaînes dans les réglages et n’affichez que leurs programmes si vous le souhaitez.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-bookmark"/></svg></span><h3>À voir, Déjà vus, Envie de revoir</h3><p>Mettez de côté vos prochaines découvertes et gardez le fil des histoires déjà vues… ou à savourer encore.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-bell"/></svg></span><h3>Rappels avant diffusion</h3><p>Une notification 15 ou 30 minutes avant le début, le temps de préparer le chocolat chaud.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-offline"/></svg></span><h3>Hors ligne</h3><p>Le dernier programme téléchargé reste consultable sans connexion, tout comme vos listes.</p></li>
+        <li class="hm-feature tn-reveal"><span class="tn-seal"><svg aria-hidden="true"><use href="#i-gift"/></svg></span><h3>Sans Pub, si vous le souhaitez</h3><p>L’application est gratuite. Un achat unique, sans abonnement, masque les bannières publicitaires.</p></li>
+      </ul>
+    </div>
   </section>
-  <section class="availability" id="disponibilite" aria-labelledby="disponibilite-titre"><div class="wrap">
-    <p class="eyebrow">Votre prochaine soirée commence ici</p><h2 id="disponibilite-titre">La magie de Noël, dans votre poche.</h2>
-    <p>🎄 Téléchargez TéléNoël gratuitement et ne manquez plus vos téléfilms de Noël préférés !</p>
-    <div class="stores"><a class="store" id="app-store" href="https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427"><span>Pour iPhone</span><strong>Télécharger sur l’App Store <span aria-hidden="true">↗</span></strong></a><a class="store" id="google-play" href="https://play.google.com/store/apps/details?id=com.gesland.telenoel"><span>Pour Android</span><strong>Disponible sur Google Play <span aria-hidden="true">↗</span></strong></a></div>
-    <p>TéléNoël est un guide de programmes : l’application ne diffuse aucune vidéo et ne propose ni streaming ni replay.</p>
-  </div></section>
-  <section class="publisher wrap" id="editeur" aria-labelledby="editeur-titre"><div><p class="eyebrow">Une application indépendante</p><h2 id="editeur-titre">Benjamin Gesland</h2><p>Développeur indépendant · Créateur de TéléNoël</p></div><a href="../index.html">Découvrir mon portfolio <span aria-hidden="true">↗</span></a></section>
+
+  <!-- Prochaine version : ne rien présenter comme disponible avant sa publication effective dans les boutiques.
+       Procédure de bascule : voir le guide interne de mise à jour du site (hors dépôt public). -->
+  <section class="hm-section hm-next" id="bientot" aria-labelledby="bientot-titre">
+    <div class="tn-wrap">
+      <header class="hm-heading tn-reveal">
+        <p class="tn-label"><svg aria-hidden="true"><use href="#i-sparkle"/></svg>En préparation · version 1.1</p>
+        <h2 id="bientot-titre">Bientôt dans TéléNoël.</h2>
+        <div class="tn-rule" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></div>
+        <p>La prochaine version est en cours de finalisation. Ces nouveautés <strong>ne sont pas encore disponibles</strong> dans la version actuelle des boutiques&nbsp;; elles arriveront avec la mise à jour, une fois celle-ci validée par Apple et Google.</p>
+      </header>
+      <ul class="hm-features hm-features-next" role="list">
+        <li class="hm-feature tn-reveal"><span class="hm-soon">Bientôt</span><span class="tn-seal"><svg aria-hidden="true"><use href="#i-badge"/></svg></span><h3>Badges «&nbsp;Inédit&nbsp;» et «&nbsp;Nouveauté&nbsp;»</h3><p>Repérez les premières diffusions annoncées par le guide TV, avec un filtre dédié, et les téléfilms récemment arrivés au programme.</p></li>
+        <li class="hm-feature tn-reveal"><span class="hm-soon">Bientôt</span><span class="tn-seal"><svg aria-hidden="true"><use href="#i-live"/></svg></span><h3>«&nbsp;En cours&nbsp;» et compte à rebours</h3><p>Un badge et une barre de progression pour les films en cours, un compte à rebours avant les suivants&nbsp;: des estimations fondées sur les horaires annoncés.</p></li>
+        <li class="hm-feature tn-reveal"><span class="hm-soon">Bientôt</span><span class="tn-seal"><svg aria-hidden="true"><use href="#i-book"/></svg></span><h3>L’histoire, en quelques lignes</h3><p>Pour certains films, un court résumé en français rédigé à partir de sources libres comme Wikipédia, avec ses références. Tous les films n’en auront pas.</p></li>
+        <li class="hm-feature tn-reveal"><span class="hm-soon">Bientôt</span><span class="tn-seal"><svg aria-hidden="true"><use href="#i-play"/></svg></span><h3>Bandes-annonces sur YouTube</h3><p>Quand une bande-annonce officielle existe, un bouton l’ouvre sur YouTube, souvent en version originale.</p></li>
+        <li class="hm-feature tn-reveal"><span class="hm-soon">Bientôt</span><span class="tn-seal"><svg aria-hidden="true"><use href="#i-share"/></svg></span><h3>Partager un téléfilm</h3><p>Envoyez à vos proches le titre, la chaîne et l’horaire d’une diffusion depuis la feuille de partage de votre téléphone.</p></li>
+        <li class="hm-feature tn-reveal"><span class="hm-soon">Bientôt</span><span class="tn-seal"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h3>Le compteur avant Noël</h3><p>Le décompte des jours jusqu’au 25 décembre, directement dans l’application.</p></li>
+        <li class="hm-feature tn-reveal"><span class="hm-soon">Bientôt</span><span class="tn-seal"><svg aria-hidden="true"><use href="#i-image"/></svg></span><h3>Des fiches plus riches</h3><p>De nouvelles illustrations hivernales et un catalogue enrichi automatiquement au fil de la saison.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hm-section hm-gallery-section" id="captures" aria-labelledby="captures-titre">
+    <div class="tn-wrap">
+      <header class="hm-heading tn-reveal">
+        <p class="tn-label"><svg aria-hidden="true"><use href="#i-star"/></svg>Aperçu de l’application</p>
+        <h2 id="captures-titre">Un petit air de Noël à chaque écran.</h2>
+        <div class="tn-rule" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></div>
+        <p>Captures de TéléNoël 1.0, telles que présentées sur l’App Store.</p>
+      </header>
+    </div>
+    <div class="hm-gallery" role="region" aria-label="Captures d’écran de TéléNoël, défilement horizontal" tabindex="0">
+      <figure class="hm-shot"><img src="assets/captures/programme-420.webp" srcset="assets/captures/programme-420.webp 420w, assets/captures/programme-760.webp 760w" sizes="(max-width: 600px) 72vw, 300px" width="420" height="913" loading="lazy" decoding="async" alt="Écran Programme : les téléfilms de Noël du jour, chacun avec sa chaîne, ses horaires et les boutons À voir et Déjà vu."><figcaption>Le programme du jour</figcaption></figure>
+      <figure class="hm-shot"><img src="assets/captures/a-voir-420.webp" srcset="assets/captures/a-voir-420.webp 420w, assets/captures/a-voir-760.webp 760w" sizes="(max-width: 600px) 72vw, 300px" width="420" height="913" loading="lazy" decoding="async" alt="Écran À voir : les films gardés pour plus tard, avec leur prochaine diffusion."><figcaption>Votre liste À voir</figcaption></figure>
+      <figure class="hm-shot"><img src="assets/captures/deja-vus-420.webp" srcset="assets/captures/deja-vus-420.webp 420w, assets/captures/deja-vus-760.webp 760w" sizes="(max-width: 600px) 72vw, 300px" width="420" height="913" loading="lazy" decoding="async" alt="Écran Déjà vus : les téléfilms déjà regardés et l’onglet Envie de revoir."><figcaption>Vos films déjà vus</figcaption></figure>
+      <figure class="hm-shot"><img src="assets/captures/rappels-420.webp" srcset="assets/captures/rappels-420.webp 420w, assets/captures/rappels-760.webp 760w" sizes="(max-width: 600px) 72vw, 300px" width="420" height="913" loading="lazy" decoding="async" alt="Fiche d’un film : boutons À voir et Déjà vu, prochains rendez-vous et choix d’un rappel 15 ou 30 minutes avant."><figcaption>La fiche d’un film et ses rappels</figcaption></figure>
+      <figure class="hm-shot"><img src="assets/captures/recherche-420.webp" srcset="assets/captures/recherche-420.webp 420w, assets/captures/recherche-760.webp 760w" sizes="(max-width: 600px) 72vw, 300px" width="420" height="913" loading="lazy" decoding="async" alt="Écran Recherche : un champ pour saisir un titre et les films correspondants du catalogue."><figcaption>La recherche</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="hm-section" id="chaines" aria-labelledby="chaines-titre">
+    <div class="tn-wrap hm-channels-wrap">
+      <header class="hm-heading tn-reveal">
+        <p class="tn-label"><svg aria-hidden="true"><use href="#i-tv"/></svg>Télévision gratuite</p>
+        <h2 id="chaines-titre">Les chaînes suivies par TéléNoël.</h2>
+        <div class="tn-rule" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></div>
+        <p>TéléNoël recense les téléfilms de Noël programmés sur ces chaînes de la TNT. La couverture peut varier selon les jours et les données disponibles.</p>
+      </header>
+      <ul class="hm-channels tn-reveal" role="list">
+        <li>TF1</li><li>TMC</li><li>M6</li><li>W9</li><li>TFX</li><li>TF1 Séries Films</li><li>6ter</li><li>Gulli</li><li>RMC Life</li><li>CSTAR <small>avec la version 1.1</small></li>
+      </ul>
+      <p class="hm-channels-note tn-reveal">TéléNoël est un guide indépendant&nbsp;: il n’est ni affilié à ces chaînes, ni approuvé ou sponsorisé par elles. Les noms des chaînes sont cités uniquement pour indiquer où passent les films.</p>
+    </div>
+  </section>
+
+  <section class="hm-section hm-why" aria-labelledby="pourquoi-titre">
+    <div class="tn-wrap hm-why-grid">
+      <div class="hm-why-intro tn-reveal">
+        <p class="tn-label"><svg aria-hidden="true"><use href="#i-heart"/></svg>Pour les amoureux de Noël</p>
+        <h2 id="pourquoi-titre">Pourquoi choisir TéléNoël&nbsp;?</h2>
+        <div class="tn-rule" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></div>
+        <p>Parce que la saison des téléfilms de Noël mérite mieux qu’une grille TV parcourue à la hâte. TéléNoël a été imaginée pour celles et ceux qui attendent chaque année ces belles histoires, un plaid sur les genoux.</p>
+      </div>
+      <ul class="hm-why-list" role="list">
+        <li class="tn-reveal"><svg aria-hidden="true"><use href="#i-sparkle"/></svg><div><h3>Tous les téléfilms de Noël au même endroit</h3><p>Plus besoin de jongler entre les programmes des chaînes.</p></div></li>
+        <li class="tn-reveal"><svg aria-hidden="true"><use href="#i-sparkle"/></svg><div><h3>Ne plus manquer une diffusion</h3><p>Un rappel au bon moment, et la soirée est sauvée.</p></div></li>
+        <li class="tn-reveal"><svg aria-hidden="true"><use href="#i-sparkle"/></svg><div><h3>Préparer ses soirées de Noël</h3><p>Repérez à l’avance les films des prochains jours.</p></div></li>
+        <li class="tn-reveal"><svg aria-hidden="true"><use href="#i-sparkle"/></svg><div><h3>Garder le souvenir des films vus</h3><p>Vos listes restent sur votre téléphone, sans compte à créer.</p></div></li>
+        <li class="tn-reveal"><svg aria-hidden="true"><use href="#i-sparkle"/></svg><div><h3>Découvrir de nouvelles histoires</h3><p>Le catalogue s’étoffe au fil de la saison, au rythme des programmes.</p></div></li>
+        <li class="tn-reveal"><svg aria-hidden="true"><use href="#i-sparkle"/></svg><div><h3>Une interface pensée pour Noël</h3><p>Velours rouge, sapins, guirlandes et lumières dorées&nbsp;: l’ambiance des fêtes à chaque ouverture.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hm-section hm-faq-section" id="faq" aria-labelledby="faq-titre">
+    <div class="tn-wrap hm-faq-wrap">
+      <header class="hm-heading tn-reveal">
+        <p class="tn-label"><svg aria-hidden="true"><use href="#i-star"/></svg>Questions fréquentes</p>
+        <h2 id="faq-titre">Tout savoir sur TéléNoël.</h2>
+        <div class="tn-rule" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></div>
+      </header>
+      <div class="hm-faq">
+        <details><summary>TéléNoël est-elle gratuite&nbsp;?</summary><div><p>Oui. TéléNoël se télécharge et s’utilise gratuitement&nbsp;; elle est financée par des bannières publicitaires. Un achat unique facultatif, « Sans Pub », masque ces bannières. Ce n’est pas un abonnement&nbsp;: vous ne payez qu’une fois, au prix affiché par l’App Store ou Google Play avant validation.</p></div></details>
+        <details><summary>Sur quels appareils puis-je installer TéléNoël&nbsp;?</summary><div><p>Sur iPhone, depuis l’<a href="https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427">App Store</a>, et sur les smartphones Android, depuis <a href="https://play.google.com/store/apps/details?id=com.gesland.telenoel">Google Play</a>. Les versions de système compatibles sont indiquées sur chaque boutique.</p></div></details>
+        <details><summary>Puis-je regarder les téléfilms directement dans l’application&nbsp;?</summary><div><p>Non. TéléNoël est un guide de programmes&nbsp;: elle vous indique quand et sur quelle chaîne passent les téléfilms de Noël. Elle ne diffuse aucun film, ne propose ni streaming ni replay et ne donne accès à aucun flux vidéo. Pour regarder un film, rendez-vous sur la chaîne concernée à l’heure annoncée.</p></div></details>
+        <details><summary>Quelles chaînes sont disponibles&nbsp;?</summary><div><p>TF1, TMC, M6, W9, TFX, TF1 Séries Films, 6ter, Gulli et RMC Life&nbsp;; CSTAR rejoint la liste avec la version 1.1. Seuls les téléfilms de Noël programmés sur ces chaînes apparaissent dans l’application.</p></div></details>
+        <details><summary>Comment les programmes sont-ils actualisés&nbsp;?</summary><div><p>Le serveur de TéléNoël récupère automatiquement les programmes plusieurs fois par jour, à partir des données du projet <a href="https://xmltvfr.fr/">XML TV Fr</a>. L’application télécharge ensuite le programme des prochains jours lorsque vous l’ouvrez avec une connexion. Les chaînes peuvent modifier leur programmation au dernier moment&nbsp;: en cas de doute, l’horaire de la chaîne fait foi.</p></div></details>
+        <details><summary>Comment recevoir un rappel avant une diffusion&nbsp;?</summary><div><p>Ouvrez la fiche du film, puis choisissez un rappel 15 ou 30 minutes avant la diffusion. La première fois, votre téléphone vous demande l’autorisation d’afficher des notifications. Sur Android, l’autorisation « Alarmes et rappels » permet un rappel à l’heure exacte. Vos rappels se retrouvent aussi dans les réglages de l’application.</p></div></details>
+        <details><summary>Pourquoi certains films n’ont-ils pas de résumé&nbsp;?</summary><div><p>Avec la version 1.1, certains films présenteront un court résumé rédigé à partir de sources libres comme Wikipédia. Lorsqu’aucune source fiable et réutilisable n’existe pour un film, aucun résumé n’est affiché plutôt que d’en inventer un.</p></div></details>
+        <details><summary>Pourquoi certaines affiches sont-elles génériques&nbsp;?</summary><div><p>Les affiches officielles appartiennent aux producteurs et distributeurs&nbsp;: TéléNoël ne les affiche que lorsqu’elle a le droit de le faire. Sinon, la fiche présente une illustration hivernale originale, qui la décore sans représenter le film.</p></div></details>
+        <details><summary>Comment supprimer les publicités&nbsp;?</summary><div><p>Dans l’onglet Réglages, rubrique « Supprimer les publicités », touchez « Acheter Sans Pub ». Le paiement est traité par l’App Store ou Google Play&nbsp;; le prix est affiché par la boutique avant confirmation. Les détails figurent dans les <a href="conditions/index.html#achat">conditions d’utilisation</a>.</p></div></details>
+        <details><summary>Comment restaurer mon achat&nbsp;?</summary><div><p>Après une réinstallation, ou sur un autre appareil connecté au même compte Apple ou Google, ouvrez les Réglages de TéléNoël et touchez « Restaurer mes achats ». L’achat reste lié à la boutique où il a été effectué&nbsp;: un achat sur l’App Store ne se transfère pas sur Android, et inversement.</p></div></details>
+        <details><summary>Où sont conservées mes listes&nbsp;?</summary><div><p>Sur votre téléphone uniquement. TéléNoël ne demande aucun compte et n’envoie ni vos listes ni vos rappels à son serveur. Supprimer l’application efface ces données, sauf sauvegarde de votre téléphone. Tous les détails figurent dans la <a href="confidentialite/index.html">politique de confidentialité</a>.</p></div></details>
+        <details><summary>Comment signaler une erreur&nbsp;?</summary><div><p>Un horaire faux, un film mal identifié, un résumé inexact ou une bande-annonce erronée&nbsp;? Écrivez à <a href="mailto:bengesland27500@gmail.com?subject=T%C3%A9l%C3%A9No%C3%ABl%20%E2%80%94%20signalement">bengesland27500@gmail.com</a> en précisant le titre du film et, si possible, la date et la chaîne. Le contenu sera vérifié, puis corrigé ou retiré.</p></div></details>
+        <details><summary>Comment contacter le développeur&nbsp;?</summary><div><p>Par e-mail, à <a href="mailto:bengesland27500@gmail.com">bengesland27500@gmail.com</a>. TéléNoël est développée par Benjamin Gesland, développeur indépendant.</p></div></details>
+        <details><summary>TéléNoël est-elle affiliée aux chaînes de télévision&nbsp;?</summary><div><p>Non. TéléNoël est un guide indépendant. Elle n’est affiliée ni aux chaînes, ni aux producteurs ou distributeurs des films, et n’est ni approuvée ni sponsorisée par eux. Les noms des chaînes et des films appartiennent à leurs titulaires.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="hm-cta" id="telecharger" aria-labelledby="telecharger-titre">
+    <svg class="tn-garland tn-garland-anim hm-cta-garland" aria-hidden="true" focusable="false"><use href="#garland"/></svg>
+    <div class="tn-wrap hm-cta-inner tn-reveal">
+      <svg class="hm-cta-star tn-twinkle" aria-hidden="true"><use href="#i-star"/></svg>
+      <h2 id="telecharger-titre">Prêt à retrouver toute la magie de Noël&nbsp;?</h2>
+      <p>Téléchargez TéléNoël gratuitement et installez-vous&nbsp;: votre prochaine belle histoire vous attend.</p>
+      <div class="tn-stores hm-cta-stores" role="group" aria-label="Télécharger TéléNoël gratuitement">
+        <a class="tn-store apple" href="https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427"><img src="assets/app-store-fr.svg" width="127" height="40" alt="Télécharger dans l’App Store" loading="lazy"></a>
+        <a class="tn-store google" href="https://play.google.com/store/apps/details?id=com.gesland.telenoel"><img src="assets/google-play-fr.png" width="646" height="250" alt="Disponible sur Google Play" loading="lazy"></a>
+      </div>
+      <p class="hm-cta-note">TéléNoël est un guide de programmes&nbsp;: l’application ne diffuse aucune vidéo.</p>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap"><div class="footer-links" role="navigation" aria-label="Informations légales"><a href="mentions-legales/index.html">Mentions légales</a><a href="confidentialite/index.html">Politique de confidentialité</a><a href="sources/index.html">Sources et attributions</a><a href="conditions/index.html">Conditions d’utilisation</a></div><p>TéléNoël est indépendant : ni affilié aux chaînes présentées, ni approuvé ou sponsorisé par elles. Données de programmes : <a href="https://xmltvfr.fr/">XML TV Fr</a>. Métadonnées : <a href="https://thetvdb.com">TheTVDB</a>, Wikidata et Wikipédia ; résumés sous licence CC BY-SA 4.0 avec attribution sur chaque fiche. Les droits et crédits sont détaillés dans la page <a href="sources/index.html">Sources et attributions</a>.</p></div></footer>
+
+<footer class="tn-footer" id="contact">
+  <div class="tn-wrap tn-footer-grid">
+    <div>
+      <img class="tn-footer-logo" src="assets/telenoel-logo.webp" width="844" height="483" alt="TéléNoël" loading="lazy">
+      <p>Le guide indépendant des téléfilms de Noël à la télévision française, créé par Benjamin Gesland, développeur indépendant.</p>
+    </div>
+    <div>
+      <h2>Télécharger</h2>
+      <ul>
+        <li><a href="https://apps.apple.com/fr/app/t%C3%A9l%C3%A9no%C3%ABl/id6822736427">App Store (iPhone)</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.gesland.telenoel">Google Play (Android)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:bengesland27500@gmail.com">bengesland27500@gmail.com</a></li>
+        <li><a href="mailto:bengesland27500@gmail.com?subject=T%C3%A9l%C3%A9No%C3%ABl%20%E2%80%94%20signalement">Signaler une erreur</a></li>
+        <li><a href="../index.html">Portfolio de l’éditeur</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Informations</h2>
+      <ul>
+        <li><a href="mentions-legales/index.html">Mentions légales</a></li>
+        <li><a href="confidentialite/index.html">Politique de confidentialité</a></li>
+        <li><a href="conditions/index.html">Conditions d’utilisation</a></li>
+        <li><a href="conditions/index.html#achat">Achat Sans Pub et vos droits</a></li>
+        <li><a href="sources/index.html">Sources et crédits</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="tn-wrap tn-footer-note">
+    <p>TéléNoël n’est affiliée à aucune chaîne de télévision, ni approuvée ou sponsorisée par elles. Données de programmes&nbsp;: <a href="https://xmltvfr.fr/">XML TV Fr</a>. Ce site ne dépose aucun cookie, n’utilise aucun outil de mesure d’audience et ne charge aucune ressource externe.</p>
+    <p>Apple, le logo Apple et App Store sont des marques d’Apple Inc. Google Play et le logo Google Play sont des marques de Google LLC.</p>
+  </div>
+</footer>
+<script src="assets/telenoel.js" defer></script>
 </body>
 </html>
