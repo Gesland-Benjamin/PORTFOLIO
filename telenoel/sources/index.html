@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
-  <meta name="description" content="Origine des programmes TéléNoël, attribution XML TV Fr et droits distincts sur les logos et illustrations.">
+  <meta name="description" content="Origine des programmes, résumés, identifications et bandes-annonces de TéléNoël : XML TV Fr, Wikipédia, Wikidata, TheTVDB, YouTube, licences et droits sur les logos.">
   <link rel="canonical" href="https://benjamingesland.dev/telenoel/sources/index.html">
-  <title>Sources et crédits — TéléNoël</title>
+  <title>Sources et attributions — TéléNoël</title>
   <style>
     :root { color-scheme: light; --paper:#fffdf7; --ink:#20392f; --green:#174b3a; --muted:#4e6158; --line:#cbd4ca; }
     * { box-sizing:border-box; }
@@ -39,12 +39,36 @@
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
-<header><div class="brand"><span aria-hidden="true">✦</span> TéléNoël</div><h1>Sources et crédits</h1><p class="meta">Dernière mise à jour : <time datetime="2026-10-31">31 octobre 2026</time></p></header>
+<header><div class="brand"><span aria-hidden="true">✦</span> TéléNoël</div><h1>Sources et attributions</h1><p class="meta">Application TéléNoël 1.1.0 · Dernière mise à jour : <time datetime="2026-11-21">21 novembre 2026</time></p></header>
 <main id="contenu" tabindex="-1">
+<nav aria-label="Sommaire"><ul>
+<li><a href="#programmes">Programmes TV : XML TV Fr</a></li><li><a href="#resumes">Résumés : Wikipédia</a></li>
+<li><a href="#identification">Identification : TheTVDB, Wikidata</a></li><li><a href="#bandes-annonces">Bandes-annonces : YouTube</a></li>
+<li><a href="#logos">Logos des chaînes</a></li><li><a href="#illustrations">Affiches et illustrations</a></li>
+</ul></nav>
 <section id="programmes"><h2>Programmes TV : XML TV Fr</h2>
 <p>Les titres, noms des chaînes, dates et horaires de diffusion proviennent de <a href="https://xmltvfr.fr/">XML TV Fr</a>, projet maintenu par racacax. Le backend TéléNoël récupère les programmes, les stocke et les fournit à l’application par son API. Le catalogue téléchargé est conservé sur l’appareil pour la consultation hors ligne.</p>
 <p>Dans sa <a href="https://github.com/racacax/XML-TV-Fr/issues/223#issuecomment-6170959182">réponse publique à la demande d’autorisation pour TéléNoël</a>, le mainteneur accepte l’utilisation de la source et le stockage des données avec une mention du projet. Il distingue les informations factuelles des descriptions et images, dont les droits dépendent des fournisseurs. Cette réponse ne constitue pas une licence générale sur les contenus de tiers.</p>
-<p>La couverture varie selon les chaînes et les dates. Les horaires peuvent évoluer ; le guide ne garantit pas une programmation exhaustive ou définitive.</p></section>
+<p>Les badges « Inédit » reposent sur l’annonce de première diffusion fournie par ces données de programmes ; les badges « Nouveauté » sur la date d’arrivée du film dans le catalogue TéléNoël. Ils ne sont affichés que lorsque ces données le permettent.</p>
+<p>La couverture varie selon les chaînes et les dates. Les horaires peuvent évoluer ; le guide ne garantit pas une programmation exhaustive ou définitive.</p>
+<p>Attribution affichée dans l’application : « Données de programmes TV : XML TV Fr — https://xmltvfr.fr/ ».</p></section>
+<section id="resumes"><h2>Résumés : Wikipédia et licence CC BY-SA 4.0</h2>
+<p>Certains films, et non tous, présentent un résumé « L’histoire ». Ce texte est une adaptation française rédigée pour TéléNoël, avec l’aide d’un modèle d’intelligence artificielle (OpenAI), à partir de faits extraits d’articles de <a href="https://www.wikipedia.org/">Wikipédia</a>, dans différentes langues. Il est publié après des contrôles automatiques (sources, licence, cohérence du film, qualité du texte), sans relecture humaine systématique. Lorsque les sources libres sont insuffisantes, aucun résumé n’est affiché.</p>
+<p>Le texte des articles de Wikipédia est diffusé sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">Creative Commons Attribution — Partage dans les mêmes conditions 4.0 International (CC BY-SA 4.0)</a>. Conformément à cette licence et aux <a href="https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/fr">conditions d’utilisation de la Wikimedia Foundation</a>, <strong>chaque résumé porte sa propre attribution, directement sur la fiche du film</strong> : titre et lien vers la version précise de l’article utilisée, lien vers l’historique qui liste ses auteurs (« Contributeurs Wikipédia »), mention de la traduction et de l’adaptation par TéléNoël, et lien vers la licence.</p>
+<p>Les résumés adaptés de Wikipédia sont eux-mêmes diffusés sous licence CC BY-SA 4.0 : vous pouvez les réutiliser, y compris commercialement, à condition de créditer leurs sources selon les mêmes modalités et de partager vos adaptations sous la même licence. Cette licence ne concerne que le texte des résumés ; elle ne s’étend ni aux logos, ni aux illustrations, ni au reste de l’application.</p>
+<p>Cette page ne remplace pas l’attribution individuelle de chaque résumé. TéléNoël n’est ni affilié à Wikipédia ni soutenu par la Wikimedia Foundation ou par les auteurs des articles.</p>
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr">Consulter le texte juridique de CC BY-SA 4.0</a>.</p></section>
+<section id="identification"><h2>Identification des films : TheTVDB, Wikidata et Wikipédia</h2>
+<p>Pour relier un titre du programme TV au bon film (titre original, année, interprètes), TéléNoël s’appuie sur trois sources, consultées par son serveur :</p>
+<ul>
+<li><strong>TheTVDB</strong> — <a href="https://thetvdb.com">Métadonnées fournies par TheTVDB</a>. Pensez à <a href="https://thetvdb.com/subscribe">compléter les informations manquantes ou à vous abonner</a>. TheTVDB est utilisé selon sa licence gratuite avec attribution. TéléNoël n’affiche ni synopsis, ni affiche, ni image provenant de TheTVDB : sa licence n’autorise pas l’usage des images, bandes-annonces ou programmes associés à ses données.</li>
+<li><strong>Wikidata</strong> — <a href="https://www.wikidata.org">données de Wikidata</a>, placées dans le domaine public (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0 1.0</a>). Leur réutilisation ne requiert pas d’attribution ; TéléNoël la mentionne néanmoins.</li>
+<li><strong>Wikipédia</strong> — articles consultés pour confirmer l’identité d’un film, sous licence CC BY-SA 4.0. Lorsqu’un texte de Wikipédia est repris dans l’application, son attribution figure sur la fiche du film (voir <a href="#resumes">Résumés</a>).</li>
+</ul>
+<p>Lorsqu’une donnée issue de TheTVDB est présentée dans l’application, l’attribution « Métadonnées de films : TheTVDB.com », avec un lien direct vers TheTVDB.com, figure dans l’écran « À propos ». TéléNoël n’est affilié à aucun de ces services.</p></section>
+<section id="bandes-annonces"><h2>Bandes-annonces : YouTube</h2>
+<p>Lorsqu’une bande-annonce est proposée, il s’agit d’une vidéo hébergée sur <a href="https://www.youtube.com/">YouTube</a> et publiée par une chaîne officielle ou un distributeur. Elle a été repérée automatiquement grâce aux services de l’API YouTube et à des pistes issues de TheTVDB, puis vérifiée automatiquement (titre exact, année, chaîne, disponibilité). Toutes les fiches n’en disposent pas, et beaucoup de téléfilms n’existent qu’en version originale : dans ce cas, le bouton l’indique (VO).</p>
+<p>Le bouton « Voir la bande-annonce » ouvre la vidéo dans YouTube : TéléNoël ne lit, n’intègre, n’héberge ni n’enregistre aucune vidéo. Les vidéos, titres et marques restent la propriété de leurs titulaires ; YouTube et le logo YouTube sont des marques de Google LLC. En ouvrant une vidéo, vous êtes soumis aux <a href="https://www.youtube.com/t/terms">Conditions d’utilisation de YouTube</a> et aux <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>. Les liens sont revérifiés ou retirés au plus tard tous les 30 jours.</p></section>
 <section id="logos"><h2>Logos des chaînes</h2>
 <p>TéléNoël est un guide de programmes TV indépendant. L’application n’est ni affiliée aux chaînes de télévision présentées, ni approuvée ou sponsorisée par elles. Les noms et logos de TF1, TMC, M6, W9, TFX, TF1 Séries Films, 6ter, Gulli et RMC Life sont utilisés pour identifier les chaînes associées aux programmes et horaires affichés. Leur présence ne constitue pas une revendication de partenariat ou d’autorisation des chaînes.</p>
 <p>La correspondance technique des neuf fichiers utilisés dans TéléNoël avec des ressources identifiées sur Wikimedia Commons est documentée. Cette vérification porte sur les fichiers, leurs versions historiques et leur contenu graphique ; elle ne constitue pas une validation juridique des droits de réutilisation.</p>
@@ -80,12 +104,13 @@
 <p>Ces crédits reproduisent les informations des fiches Wikimedia Commons ; ils ne certifient pas que le contributeur détient les droits sur les logos officiels. La licence comporte des limitations de garantie et n’accorde pas les droits de marque. Aucun soutien de Louitcho, de Wikimedia Commons ou des chaînes à TéléNoël n’est revendiqué.</p>
 <p><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr">Consulter le texte juridique de CC BY-SA 4.0</a>.</p>
 </section>
-<section id="illustrations"><h2>Illustrations et autres sources</h2>
-<p>Les illustrations hivernales intégrées à l’application sont décoratives ; elles ne représentent pas les films. TéléNoël n’affiche ni affiche officielle ni résumé de film provenant des fournisseurs XML TV Fr. Aucune licence de réutilisation de ces illustrations n’est accordée par cette page.</p>
-<p>TMDB n’est pas une source active dans le code mobile vérifié : aucun appel à son API, aucune affiche et aucun résumé TMDB ne sont utilisés dans ce parcours.</p></section>
-<section id="diffusion"><h2>Un guide, sans diffusion vidéo</h2><p>TéléNoël permet de consulter les programmes et d’organiser ses listes et rappels. L’application ne diffuse aucun téléfilm, ne propose ni streaming ni replay et ne fournit aucun accès aux flux vidéo des chaînes.</p></section>
-<section id="contact"><h2>Signaler une erreur ou une question de droits</h2><p>Écrivez à <a href="mailto:bengesland27500@gmail.com">bengesland27500@gmail.com</a> en précisant le contenu concerné et, pour une demande relative aux droits, les éléments permettant de l’examiner.</p></section>
+<section id="illustrations"><h2>Affiches, illustrations et autres sources</h2>
+<p>Une affiche de film n’est affichée que si TéléNoël a obtenu le droit de l’utiliser ; son crédit figure alors sous l’image et l’affiche est retirée à la fin de l’autorisation. Sinon, la fiche montre une illustration hivernale originale de TéléNoël : elle est décorative, ne représente pas le film et n’est pas une affiche officielle. Aucune licence de réutilisation de ces illustrations n’est accordée par cette page.</p>
+<p>Les descriptions et images fournies avec les programmes XML TV Fr ne sont pas affichées : leurs droits dépendent des fournisseurs.</p>
+<p>TMDB n’est pas une source de TéléNoël : aucun appel à son API, aucune affiche et aucun résumé TMDB ne sont utilisés.</p></section>
+<section id="diffusion"><h2>Un guide, sans diffusion vidéo</h2><p>TéléNoël permet de consulter les programmes et d’organiser ses listes et rappels. L’application ne diffuse aucun téléfilm, ne lit aucune bande-annonce en son sein, ne propose ni streaming ni replay et ne fournit aucun accès aux flux vidéo des chaînes.</p></section>
+<section id="contact"><h2>Signaler une erreur ou une question de droits</h2><p>Écrivez à <a href="mailto:bengesland27500@gmail.com">bengesland27500@gmail.com</a> en précisant le contenu concerné (par exemple un résumé inexact, une bande-annonce erronée ou une attribution incomplète) et, pour une demande relative aux droits, les éléments permettant de l’examiner.</p></section>
 </main>
-<footer><nav aria-label="Informations TéléNoël"><a href="../confidentialite/index.html">Confidentialité</a> · <a href="../mentions-legales/index.html">Mentions légales</a> · <a href="../sources/index.html">Sources et crédits</a></nav><p>TéléNoël · Sources et crédits</p><a href="#contenu">Revenir au contenu</a></footer>
+<footer><nav aria-label="Informations TéléNoël"><a href="../confidentialite/index.html">Confidentialité</a> · <a href="../mentions-legales/index.html">Mentions légales</a> · <a href="../sources/index.html">Sources et attributions</a> · <a href="../conditions/index.html">Conditions d’utilisation</a></nav><p>TéléNoël · Sources et attributions</p><a href="#contenu">Revenir au contenu</a></footer>
 </body>
 </html>
